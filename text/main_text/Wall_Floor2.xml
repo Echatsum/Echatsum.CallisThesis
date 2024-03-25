@@ -1,0 +1,16 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>2nd Floor - Technology</Text>
+	</TextBlock>
+	<ShipLogConditions>
+		<RevealFact>
+			  <FactID>CALLISTHESIS_SHIPLOG_ARCHIVE_PUBLIC_READING</FactID>
+			  <Condition>1</Condition>
+		</RevealFact>
+		<RevealFact>
+			  <FactID>CALLISTHESIS_SHIPLOG_ARCHIVE_FLOOR_2</FactID>
+			  <Condition>1</Condition>
+		</RevealFact>
+	</ShipLogConditions>
+</NomaiObject>

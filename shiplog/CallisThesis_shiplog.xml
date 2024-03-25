@@ -1,0 +1,261 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>The Boiled Egg</ID>
+
+    <Entry>
+        <ID>CALLISTHESIS_ENTRY_THESIS</ID> <!-- The main curiosity of the mod -->
+        <Name>Callis's Thesis</Name>
+        <Curiosity>CALLISTHESIS_ENTRY_THESIS</Curiosity>
+        <IsCuriosity/>
+        <IgnoreMoreToExplore />
+        <!-- NOTE: Picture is a nomai scroll -->
+
+        <RumorFact>
+            <ID>CALLISTHESIS_SHIPLOG_THESIS_RUMOR</ID>
+            <SourceID>CALLISTHESIS_ENTRY_FESTIVAL</SourceID>
+            <RumorName>Callis's Thesis</RumorName>
+            <Text>I've agreed to find a copy of Callis's thesis.</Text>
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_THESIS_FACT_INITIAL</ID>
+            <Text>A forgetful Nomai named Callis lost her thesis scroll. I've agreed to get her a copy from the archives.</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_THESIS_FACT_PASSWORD</ID>
+            <Text>The scroll access is protected by a password.</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_THESIS_FACT_PASSWORD_CLUES</ID>
+            <Text>Callis also forgot her password, but gave some clues as to what it might be.</Text>
+        </ExploreFact>
+        
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_THESIS_DOWNLOADED</ID>
+            <Text>I managed to download Callis's thesis onto a scroll. (Just in case, I also made a copy on my own ship computer to avoid going through all this again)</Text>
+        </ExploreFact>
+    </Entry>
+
+
+
+    <Entry>
+        <ID>CALLISTHESIS_ENTRY_PLANET</ID>
+        <Name>The Boiled Egg</Name>
+        <Curiosity>CALLISTHESIS_ENTRY_THESIS</Curiosity>
+        <!-- NOTE: picture is the planet-->
+
+        <RumorFact>
+            <ID>CALLISTHESIS_SHIPLOG_PLANET_RUMOR</ID>
+            <RumorName>The Boiled Egg</RumorName>
+            <Text>This planet ressembles a boiled egg, doesn't it?</Text>
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_PLANET_EXPLORE_FESTIVAL</ID>
+            <Text>There is a festival booth around the equator, with Nomai gathered.</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_PLANET_EXPLORE_ARCHIVE</ID>
+            <Text>There is a large building on the North pole.</Text>
+        </ExploreFact>
+    </Entry>
+
+    <Entry>
+        <ID>CALLISTHESIS_ENTRY_FESTIVAL</ID>
+        <Name>Nomai Festival</Name>
+        <Curiosity>CALLISTHESIS_ENTRY_THESIS</Curiosity>
+        <!-- NOTE: picture is the festival area-->
+
+        <RumorFact>
+            <ID>CALLISTHESIS_SHIPLOG_FESTIVAL_RUMOR_PLANET_LINK</ID>
+            <SourceID>CALLISTHESIS_ENTRY_PLANET</SourceID>
+            <RumorName>Nomai Festival</RumorName>
+            <Text>There is a presentation booth here with Nomai gathered.</Text>
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_FESTIVAL_EXPLORE_BASIC</ID>
+            <Text>There is a presentation booth here with Nomai gathered.</Text>
+            <AltText>
+                <Text>There is a presentation booth where Nomai will present their discoveries to the others.</Text>
+                <Condition>CALLISTHESIS_SHIPLOG_FESTIVAL_EXPLORE_CALLIS</Condition>
+            </AltText>
+        </ExploreFact>
+        
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_FESTIVAL_EXPLORE_CALLIS</ID>
+            <Text>A Yound Nomai named Callis has requested my help.</Text>
+        </ExploreFact>
+    </Entry>
+    
+    <Entry>
+        <ID>CALLISTHESIS_ENTRY_ARCHIVES</ID>
+        <Name>Nomai Archives</Name>
+        <Curiosity>CALLISTHESIS_ENTRY_THESIS</Curiosity>
+        <!-- NOTE: picture is the archive building-->
+
+        <RumorFact>
+            <ID>CALLISTHESIS_SHIPLOG_ARCHIVES_RUMOR</ID>
+            <SourceID>CALLISTHESIS_ENTRY_FESTIVAL</SourceID>
+            <RumorName>Nomai Archives</RumorName>
+            <Text>Callis mentioned the archives are located on the North pole of the planet.</Text>
+        </RumorFact>
+        
+        <RumorFact>
+            <ID>CALLISTHESIS_SHIPLOG_ARCHIVES_RUMOR_PLANET_LINK</ID>
+            <SourceID>CALLISTHESIS_ENTRY_PLANET</SourceID>
+            <RumorName>Nomai Archives</RumorName>
+            <Text>There is a large building on the North pole.</Text>
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_ARCHIVE_EXPLORE_BASIC</ID>
+            <Text>There is a large building on the North pole, where the Nomai archive their shared knowledge.</Text>
+        </ExploreFact>
+        
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_ARCHIVE_TICKETS</ID>
+            <Text>There is a queue of a few Nomai looking to access specific scrolls. The ticket dispenser is next to the wall.</Text>
+        </ExploreFact>
+        
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_ARCHIVE_SIGNAL</ID>
+            <Text>There is an antenna on the roof emitting a weak signal.</Text>
+        </ExploreFact>
+        
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_ARCHIVE_PUBLIC_READING</ID>
+            <Text>There are some floors with scrolls open to public reading.</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_ARCHIVE_FLOOR_1</ID>
+            <Text>The first floor is centered around 'Geography and Locations'.</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_ARCHIVE_FLOOR_2</ID>
+            <Text>The second floor is centered around 'Technology'.</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_ARCHIVE_FLOOR_3</ID>
+            <Text>The third floor is centered around 'Culture and People'.</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_ARCHIVE_FLOOR_4</ID>
+            <Text>The fourth floor is centered around 'Biology'.</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_ARCHIVE_FLOOR_5</ID>
+            <Text>The fifth floor is centered around 'History'.</Text>
+        </ExploreFact>
+    </Entry>
+
+    
+    <Entry>
+        <ID>CALLISTHESIS_ENTRY_BUKRAD</ID>
+        <Name>Bukrad Facts</Name>
+        <Curiosity>CALLISTHESIS_ENTRY_THESIS</Curiosity>
+        <!-- NOTE: picture is the lines of the bukrad scroll (hint)-->
+
+        <RumorFact>
+            <ID>CALLISTHESIS_SHIPLOG_BUKRAD_RUMOR_2</ID>
+            <SourceID>CALLISTHESIS_ENTRY_PASSWORD_PART_3</SourceID>
+            <RumorName>Bukrad Facts</RumorName>
+            <Text>I need to learn more about bukrad to assemble the password.</Text>
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_PASSWORD_PART_3_USELESS_2</ID>
+            <Text>A Nomai named Phaius states that the red-bellied horned bukrod has six legs.</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_PASSWORD_PART_3_USELESS_6</ID>
+            <Text>A Nomai named Oncid states that the 'Big Red Belly' was Dols Nyon's favorite planet.</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_PASSWORD_PART_3_USELESS_4</ID>
+            <Text>A Nomai named Stelis states that the red-tailed horned bukrad has two legs.</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_PASSWORD_PART_3_USELESS_1</ID>
+            <Text>A Nomai named Laeliin states that the blue-bellied horned bukrad has four legs.</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_PASSWORD_PART_3_HINT</ID>
+            <Text>A Nomai named Aster states that the red-bellied horned bukrad is a master of deception.</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_PASSWORD_PART_3_USELESS_3</ID>
+            <Text>A Nomai named Calytrix states that the red-bellied horned bukrad is hunted by the Tragan.</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_PASSWORD_PART_3_USELESS_5</ID>
+            <Text>A Nomai named Baeck states that the red-eyed horned bukrad is a dangerous animal with five legs.</Text>
+        </ExploreFact>
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_PASSWORD_PART_3_ANSWER</ID>
+            <Text>I spoke with a Nomai named Aster. She told me the red-bellied horned bukrad has, in fact, no legs.</Text>
+        </ExploreFact>
+    </Entry>
+
+    <Entry>
+        <ID>CALLISTHESIS_ENTRY_PASSWORD</ID>
+        <Name>Callis's Password</Name>
+        <Curiosity>CALLISTHESIS_ENTRY_THESIS</Curiosity>
+        <!-- NOTE: picture is a string of *-->
+
+        <RumorFact>
+            <ID>CALLISTHESIS_SHIPLOG_PASSWORD_RUMOR_ARCHIVE_LINK</ID>
+            <SourceID>CALLISTHESIS_ENTRY_ARCHIVES</SourceID>
+            <RumorName>Callis's Password</RumorName>
+            <Text>I need a password to access Callis's thesis scroll.</Text>
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_PASSWORD_FACT</ID>
+            <Text>I need a password to access Callis's thesis scroll.</Text>
+        </ExploreFact>
+
+        <ExploreFact>
+            <ID>CALLISTHESIS_SHIPLOG_PASSWORD_CLUES</ID>
+            <Text>Callis didn't have the password, but gave me clues on how to reconstruct it.</Text>
+        </ExploreFact>
+        
+        <Entry>
+            <ID>CALLISTHESIS_ENTRY_PASSWORD_PART_1</ID>
+            <Name>Part 1</Name>
+            <Curiosity>CALLISTHESIS_ENTRY_THESIS</Curiosity>
+            <!-- NOTE: picture is the number 10-->
+
+            <ExploreFact>
+                <ID>CALLISTHESIS_SHIPLOG_PASSWORD_PART_1_ANSWER</ID>
+                <Text>Callis told me the first part of the password is the age she was when she first saw a festival, at 10 years old.</Text>
+            </ExploreFact>
+        </Entry>
+        
+        <Entry>
+            <ID>CALLISTHESIS_ENTRY_PASSWORD_PART_2</ID>
+            <Name>Part 2</Name>
+            <Curiosity>CALLISTHESIS_ENTRY_THESIS</Curiosity>
+            <!-- NOTE: picture is the wifi signal?-->
+
+            <ExploreFact>
+                <ID>CALLISTHESIS_SHIPLOG_PASSWORD_PART_2_CLUE</ID>
+                <Text>According to Callis, the second part of her password is the same as the archive broadcast signal.</Text>
+            </ExploreFact>
+        </Entry>
+
+        
+        <Entry>
+            <ID>CALLISTHESIS_ENTRY_PASSWORD_PART_3</ID>
+            <Name>Part 3</Name>
+            <Curiosity>CALLISTHESIS_ENTRY_THESIS</Curiosity>
+            <!-- NOTE: picture is a leg?-->
+
+            <ExploreFact>
+                <ID>CALLISTHESIS_SHIPLOG_PASSWORD_PART_3_CLUE</ID>
+                <Text>For the third part of the password, I need to learn how many legs a red-bellied horned bukrad has.</Text>
+            </ExploreFact>
+        </Entry>
+    </Entry>
+
+</AstroObjectEntry>

@@ -1,0 +1,85 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
+	"entryPositions": [
+		{
+			"id": "CALLISTHESIS_ENTRY_PLANET",
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+		},
+		{
+			"id": "CALLISTHESIS_ENTRY_FESTIVAL",
+            "position": {
+                "x": 300,
+                "y": 300
+            }
+		},
+		{
+			"id": "CALLISTHESIS_ENTRY_ARCHIVES",
+            "position": {
+                "x": 300,
+                "y": -300
+            }
+		},
+		{
+			"id": "CALLISTHESIS_ENTRY_THESIS",
+			"position": {
+				"x": 600,
+				"y": 0
+			}
+		},
+		{
+			"id": "CALLISTHESIS_ENTRY_BUKRAD",
+			"position": {
+				"x": 900,
+				"y": -300
+			}
+		},
+		{
+			"id": "CALLISTHESIS_ENTRY_PASSWORD",
+			"position": {
+				"x": 600,
+				"y": -300
+			}
+		},
+		{
+			"id": "CALLISTHESIS_ENTRY_PASSWORD_PART_1",
+			"position": {
+				"x": 520,
+				"y": -400
+			}
+		},
+		{
+			"id": "CALLISTHESIS_ENTRY_PASSWORD_PART_2",
+			"position": {
+				"x": 600,
+				"y": -400
+			}
+		},
+		{
+			"id": "CALLISTHESIS_ENTRY_PASSWORD_PART_3",
+			"position": {
+				"x": 680,
+				"y": -400
+			}
+		}
+	],
+	"curiosities": [
+        {
+            "id": "CALLISTHESIS_ENTRY_THESIS",
+            "color": {
+                "r": 191,
+                "g": 63,
+                "b": 54,
+                "a": 255
+            },
+            "highlightColor": {
+                "r": 243,
+                "g": 136,
+                "b": 80,
+                "a": 255
+            }
+        }
+    ]
+}

@@ -1,0 +1,411 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Callis</NameField>
+
+	<!-- CONDITION/SHIPLOG
+		- CALLISTHESIS_CONDITION_REFUSED_TO_PLAY_MOD;			Set in CALLIS_INITIAL_EXPLANATION_3
+		
+		- CALLISTHESIS_SHIPLOG_ARCHIVES_RUMOR;					Set in CALLIS_INITIAL_EXPLANATION_6
+		- CALLISTHESIS_SHIPLOG_FESTIVAL_EXPLORE_CALLIS;			Set in CALLIS_INITIAL_EXPLANATION_6
+		- CALLISTHESIS_CONDITION_CALLIS_INITIAL_EXPLANATION;	Set in CALLIS_INITIAL_EXPLANATION_6, Used as entry condition
+	
+		- CALLISTHESIS_SHIPLOG_PASSWORD_FACT;					Used in START_A
+
+		- CALLISTHESIS_SHIPLOG_PASSWORD_CLUES;					Set in CALLIS_PASSWORD_CLUES_7
+		- CALLISTHESIS_SHIPLOG_PASSWORD_PART_1_ANSWER;			Set in CALLIS_PASSWORD_CLUES_7
+		- CALLISTHESIS_SHIPLOG_PASSWORD_PART_2_CLUE;			Set in CALLIS_PASSWORD_CLUES_7
+		- CALLISTHESIS_SHIPLOG_PASSWORD_PART_3_CLUE;			Set in CALLIS_PASSWORD_CLUES_7
+	
+	-->
+
+
+	<!-- ENTRY NODES-->
+	<DialogueNode>
+		<Name>START_DEFAULT</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Oh no.. This is bad.. Real bad..</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Hello?</Text>
+				<DialogueTarget>CALLIS_INITIAL_EXPLANATION_1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_THESIS_DOWNLOADED</RequiredLogCondition>
+				<Text>Hey. I think you dropped this.</Text>
+				<DialogueTarget>CALLIS_END_DIALOGUE_ENDING_1_0</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>START_A</Name>
+		<EntryCondition>CALLISTHESIS_CONDITION_CALLIS_INITIAL_EXPLANATION</EntryCondition>
+		<Dialogue>
+			<Page>This is bad.. Real bad..</Page>
+			<Page>Did you find the scroll?</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_THESIS_DOWNLOADED</RequiredLogCondition>
+				<Text>Yes. Here it is.</Text>
+				<DialogueTarget>CALLIS_END_DIALOGUE_ENDING_1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>No, not yet.</Text>
+				<DialogueTarget>CALLIS_END_DIALOGUE_A</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_PASSWORD_FACT</RequiredLogCondition>
+				<Text>No, I need a password to access it.</Text>
+				<DialogueTarget>CALLIS_PASSWORD_CLUES_1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>What am I looking for again?</Text>
+				<DialogueTarget>CALLIS_INITIAL_EXPLANATION_REMINDER</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>START_B</Name>
+		<EntryCondition>CALLISTHESIS_CONDITION_PASSWORD_CLUES_GIVEN</EntryCondition>
+		<Dialogue>
+			<Page>This is bad.. Real bad..</Page>
+			<Page>Did you find the scroll?</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_THESIS_DOWNLOADED</RequiredLogCondition>
+				<Text>Yes. Here it is.</Text>
+				<DialogueTarget>CALLIS_END_DIALOGUE_ENDING_1_1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>No, not yet.</Text>
+				<DialogueTarget>CALLIS_END_DIALOGUE_A</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>What am I looking for again?</Text>
+				<DialogueTarget>CALLIS_INITIAL_EXPLANATION_REMINDER</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Can you remind me the password clues?</Text>
+				<DialogueTarget>CALLIS_PASSWORD_CLUES_REMINDER</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+
+	
+	<!-- CALLIS_INITIAL_EXPLANATION NODES-->
+	<!-- Linear from CALLIS_INITIAL_EXPLANATION_1 to CALLIS_INITIAL_EXPLANATION_3-->
+	<DialogueNode>
+		<Name>CALLIS_INITIAL_EXPLANATION_1</Name>
+		<Dialogue>
+			<Page>Oh hi! My name is Callis. I don't think I've met you before?</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>What's wrong? You seemed to be worried about something</Text>
+				<DialogueTarget>CALLIS_INITIAL_EXPLANATION_2</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>CALLIS_INITIAL_EXPLANATION_2</Name>
+		<Dialogue>
+			<Page>Oh, well.. Erm.. this is a bit embarassing</Page>
+			<Page>You see, this is a big day for me. This is my first contribution to a festival and I'm about to present my thesis to the other Nomai.</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Isn't this a good thing?</Text>
+				<DialogueTarget>CALLIS_INITIAL_EXPLANATION_3</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>CALLIS_INITIAL_EXPLANATION_3</Name>
+		<Dialogue>
+			<Page>Well yes but I.. may have lost my thesis scroll?</Page>
+			<Page>I can't present my thesis without it. I'm going to look like such a fool in front of the others, this is so bad!</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Maybe I could help?</Text>
+				<DialogueTarget>CALLIS_INITIAL_EXPLANATION_4</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Oh. Well that's sure to be entertaining. See you then!</Text>
+				<ConditionToSet>CALLISTHESIS_CONDITION_REFUSED_TO_PLAY_MOD</ConditionToSet>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<!-- Almost-linear from CALLIS_INITIAL_EXPLANATION_4 to CALLIS_INITIAL_EXPLANATION_6-->
+	<DialogueNode>
+		<Name>CALLIS_INITIAL_EXPLANATION_4</Name>
+		<Dialogue>
+			<Page>I've looked everywhere, so I don't think you could..</Page>
+			<Page>Wait..</Page>
+			<Page>That's it! I remember I had it saved in the archives (in case such event happened)</Page>
+			<Page>If I had the copy there I could present my thesis</Page>
+			<Page>Would you be so kind as to get it for me please?</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Sounds like a plan.</Text>
+				<DialogueTarget>CALLIS_INITIAL_EXPLANATION_6</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Not to be rude, but can't you get it yourself?</Text>
+				<DialogueTarget>CALLIS_INITIAL_EXPLANATION_5</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>CALLIS_INITIAL_EXPLANATION_5</Name>
+		<Dialogue>
+			<Page>I'm afraid I have to stay here. I still have things to prepare and people would notice if I was gone.</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Fair enough. What is the scroll you need then?</Text>
+				<DialogueTarget>CALLIS_INITIAL_EXPLANATION_6</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>CALLIS_INITIAL_EXPLANATION_6</Name>
+		<Dialogue>
+			<Page>Thank you, you're a lifesaver! I believe it should be archived under my name, "Callis #001 - Thesis"</Page>
+			<Page>The archive building is on the North pole, if you've never been there.</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>I'll be back with it.</Text>
+				<DialogueTarget>CALLIS_END_DIALOGUE_A</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+
+		<RevealFacts>
+			<FactID>CALLISTHESIS_SHIPLOG_ARCHIVES_RUMOR</FactID>
+			<FactID>CALLISTHESIS_SHIPLOG_THESIS_RUMOR</FactID>
+			<FactID>CALLISTHESIS_SHIPLOG_FESTIVAL_EXPLORE_CALLIS</FactID>
+		</RevealFacts>
+		<SetCondition>CALLISTHESIS_CONDITION_CALLIS_INITIAL_EXPLANATION</SetCondition>
+	</DialogueNode>
+	
+	<!-- Reminder is about the same as CALLIS_INITIAL_EXPLANATION_6 -->
+	<DialogueNode>
+		<Name>CALLIS_INITIAL_EXPLANATION_REMINDER</Name>
+		<Dialogue>
+			<Page>My thesis scroll in the archives. I believe it should be under my name, "Callis #001 - Thesis"</Page>
+			<Page>The archive building is on the North pole, if you've never been there.</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>I'll be back with it.</Text>
+				<DialogueTarget>CALLIS_END_DIALOGUE_A</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+		
+	</DialogueNode>
+
+	<!-- CALLIS_PASSWORD NODES-->
+	<!-- Linear from CALLIS_PASSWORD_CLUES_1 to CALLIS_PASSWORD_CLUES_7-->
+	<DialogueNode>
+		<Name>CALLIS_PASSWORD_CLUES_1</Name>
+		<Dialogue>
+			<Page>Oh, yes. I forgot about that.</Page>
+			<Page>I did set up a password so that the first witnesses of my work would be at my presentation.</Page>
+			<Page>I would have removed the password after the ceremony, I swear!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>What's the password then? We sort of need it now, <![CDATA[<i>before</i>]]> the ceremony.</Text>
+				<DialogueTarget>CALLIS_PASSWORD_CLUES_2</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>CALLIS_PASSWORD_CLUES_2</Name>
+		<Dialogue>
+			<Page>Yes of course. Let me think. The password was..</Page>
+			<Page>It was..</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Did you forget your password as well?</Text>
+				<DialogueTarget>CALLIS_PASSWORD_CLUES_3</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>CALLIS_PASSWORD_CLUES_3</Name>
+		<Dialogue>
+			<Page>No!</Page>
+			<Page>..</Page>
+			<Page>Maybe a bit. But I do have my note as to remember it, look!</Page>
+			<Page>"Hey me! You probably forgot your password again so I'm writing this secret code to retrieve it!".</Page>
+			<Page>"First part of the password is the age you were when your parents took you to your first festival".</Page>
+			<Page>"Second part of the password is the archive building broadcast signal (assuming it has not changed since I set up the password)</Page>
+			<Page>"Third part of the password is the number of legs of the red-bellied horned bukrad".</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>I did not understand one bit of this</Text>
+				<DialogueTarget>CALLIS_PASSWORD_CLUES_4</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>CALLIS_PASSWORD_CLUES_4</Name>
+		<Dialogue>
+			<Page>Well I made it complicated so that the password would be secure.</Page>
+			<Page>For the first part, it's 10. I will always remember the day of my first festival. I met so many people and learned so many amazing things!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>And the rest?</Text>
+				<DialogueTarget>CALLIS_PASSWORD_CLUES_5</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>CALLIS_PASSWORD_CLUES_5</Name>
+		<Dialogue>
+			<Page>Well..</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>You forgot?</Text>
+				<DialogueTarget>CALLIS_PASSWORD_CLUES_6</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>CALLIS_PASSWORD_CLUES_6</Name>
+		<Dialogue>
+			<Page>I forgot.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>I figured.</Text>
+				<DialogueTarget>CALLIS_PASSWORD_CLUES_7</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>CALLIS_PASSWORD_CLUES_7</Name>
+		<Dialogue>
+			<Page>Good luck?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Thanks, I guess.</Text>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>You know what, I'm going to go explore another planet first.</Text>
+			</DialogueOption>
+		</DialogueOptionsList>
+		<RevealFacts>
+			<FactID>CALLISTHESIS_SHIPLOG_PASSWORD_CLUES</FactID>
+			<FactID>CALLISTHESIS_SHIPLOG_PASSWORD_PART_1_ANSWER</FactID>
+			<FactID>CALLISTHESIS_SHIPLOG_PASSWORD_PART_2_CLUE</FactID>
+			<FactID>CALLISTHESIS_SHIPLOG_PASSWORD_PART_3_CLUE</FactID>
+			<FactID>CALLISTHESIS_SHIPLOG_BUKRAD_RUMOR_2</FactID>
+		</RevealFacts>
+		<SetCondition>CALLISTHESIS_CONDITION_PASSWORD_CLUES_GIVEN</SetCondition>
+		<SetPersistentCondition>CALLISTHESIS_PERSCONDITION_PASSWORD_PART_2_CLUE</SetPersistentCondition>
+	</DialogueNode>
+
+	
+	<DialogueNode>
+		<Name>CALLIS_PASSWORD_CLUES_REMINDER</Name>
+		<Dialogue>
+			<Page>Sure, here it is:</Page>
+			<Page>"Hey me! You probably forgot your password again so I'm writing this secret code to retrieve it!".</Page>
+			<Page>"First part of the password is the age you were when your parents took you to your first festival - so that's 10".</Page>
+			<Page>"Second part of the password is the archive building broadcast signal (assuming it has not changed since I set up the password)</Page>
+			<Page>"Third part of the password is the number of legs of the red-bellied horned bukrad".</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>10, broadcast signal, legs of bukrad, TODO. Got it.</Text>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<!-- CALLIS_END_DIALOGUE NODES-->
+	<DialogueNode>
+		<Name>CALLIS_END_DIALOGUE_A</Name>
+		<Dialogue>
+			<Page>Please be quick..</Page>
+		</Dialogue>
+	</DialogueNode>
+
+
+	<DialogueNode>
+		<Name>CALLIS_END_DIALOGUE_ENDING_1</Name>
+		<Dialogue>
+			<Page>Thank you so much friend!</Page>
+			<Page>You saved my life today!</Page>
+		</Dialogue>
+		<SetCondition>CALLISTHESIS_CONDITION_FINISHED_MOD</SetCondition>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>CALLIS_END_DIALOGUE_ENDING_1_0</Name>
+		<Dialogue>
+			<Page>Wait, is that..</Page>
+		</Dialogue>
+		<DialogueTarget>CALLIS_END_DIALOGUE_ENDING_1</DialogueTarget>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>CALLIS_END_DIALOGUE_ENDING_1_1</Name>
+		<Dialogue>
+			<Page>I hope it was not too hard to get.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>It's okay, I learned a lot of things.</Text>
+				<DialogueTarget>CALLIS_END_DIALOGUE_ENDING_1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>I never want to hear about bukrads ever again</Text>
+				<DialogueTarget>CALLIS_END_DIALOGUE_ENDING_1_1_1</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>CALLIS_END_DIALOGUE_ENDING_1_1_1</Name>
+		<Dialogue>
+			<Page>Oh. I'm sorry to hear..</Page>
+			<Page>Well, in any case</Page>
+		</Dialogue>
+		<DialogueTarget>CALLIS_END_DIALOGUE_ENDING_1</DialogueTarget>
+	</DialogueNode>
+</DialogueTree>

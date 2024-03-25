@@ -1,0 +1,986 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name" : "The Boiled Egg",
+    "starSystem": "Jam3",
+	"Base": {
+		"groundSize": 0,
+		"surfaceSize": 300,
+		"surfaceGravity": 10,
+		"hasMapMarker": true,
+		"ambientLight": 0.8
+	},
+	"HeightMap": {
+		// 205-313
+		"minHeight": 205,
+        "maxHeight": 313,
+        "heightMap": "planets/heightmap.png"
+	},
+	"Orbit": {
+		"primaryBody": "Jam 3 Sun",
+		"semiMajorAxis": 7000,
+		"axialTilt": 50
+	},
+	"extras": {
+		"closeToSun": true
+	},
+	"Props": {
+		"details": [
+			
+			{
+				"rename": "GameObject_Area1",
+				"position": {"x": 210.9, "y": 0, "z": 0},
+				"rotation": {"x": 75, "y": 90, "z": 0}
+			},
+			{
+				"rename": "GameObject_Area2",
+				"position": {"x": 0, "y": 283.8, "z": 10},
+				"rotation": {"x": 0, "y": 0, "z": 0}
+			},
+
+			// AREA 1: FESTIVAL
+			{
+				"rename": "GameObject_PresentationBuilding",
+				"parentPath": "Sector/GameObject_Area1",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 0}
+			},
+			{
+				"rename": "PresentationBuilding",
+				"assetBundle": "planets/assetbundle/callisthesisassetbundle",
+				"path": "Assets/PrefabsToBundle/CallisThesis_TestPresentationBooth.prefab",
+				"parentPath": "Sector/GameObject_Area1/GameObject_PresentationBuilding",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 0}
+			},
+			{
+				"rename": "GameObject_Callis",
+				"parentPath": "Sector/GameObject_Area1",
+				"isRelativeToParent": true,
+				"position": {"x": 10, "y": -0.45, "z": -20},
+				"rotation": {"x": 0, "y": 130, "z": 0}
+			},
+			{
+				"rename": "Callis",
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+				"parentPath": "Sector/GameObject_Area1/GameObject_Callis",
+				"isRelativeToParent": true
+			},
+			{
+				"rename": "GameObject_JokeEnding",
+				"parentPath": "Sector/GameObject_Area1/GameObject_Callis",
+				"isRelativeToParent": true,
+				"activationCondition": "CALLISTHESIS_CONDITION_REFUSED_TO_PLAY_MOD",
+				"blinkWhenActiveChanged": false
+			},
+			{
+				"rename": "GameObject_ModEnding",
+				"parentPath": "Sector/GameObject_Area1/GameObject_Callis",
+				"isRelativeToParent": true,
+				"activationCondition": "CALLISTHESIS_CONDITION_FINISHED_MOD",
+				"blinkWhenActiveChanged": false
+			},
+			{
+				"rename": "GameObject_Nomai_Group1",
+				"parentPath": "Sector/GameObject_Area1",
+				"isRelativeToParent": true,
+				"position": {"x": 10, "y": -0.26, "z": -5},
+				"rotation": {"x": 0, "y": 0, "z": 0}
+			},
+			{
+				"rename": "GameObject_Nomai_Group2",
+				"parentPath": "Sector/GameObject_Area1",
+				"isRelativeToParent": true,
+				"position": {"x": -10, "y": -0.23, "z": -15},
+				"rotation": {"x": 358, "y": 30, "z": 0}
+			},
+			{
+				"rename": "GameObject_Nomai_Group3",
+				"parentPath": "Sector/GameObject_Area1",
+				"isRelativeToParent": true,
+				"position": {"x": 0.2, "y": 1.89, "z": -15.5},
+				"rotation": {"x": 0, "y": 110, "z": 0}
+			},
+			{
+				"rename": "Nomai_1_1",
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+				"parentPath": "Sector/GameObject_Area1/GameObject_Nomai_Group1",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": -2},
+				"rotation": {"x": 0, "y": 0, "z": 0}
+			},
+			{
+				"rename": "Nomai_1_2",
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+				"parentPath": "Sector/GameObject_Area1/GameObject_Nomai_Group1",
+				"isRelativeToParent": true,
+				"position": {"x": -1, "y": 0, "z": 1},
+				"rotation": {"x": 0, "y": 120, "z": 0}
+			},
+			{
+				"rename": "Nomai_1_3",
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+				"parentPath": "Sector/GameObject_Area1/GameObject_Nomai_Group1",
+				"isRelativeToParent": true,
+				"position": {"x": 2, "y": 0, "z": 0.5},
+				"rotation": {"x": 0, "y": 240, "z": 0}
+			},
+			{
+				"rename": "Nomai_2_1",
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+				"parentPath": "Sector/GameObject_Area1/GameObject_Nomai_Group2",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": -2},
+				"rotation": {"x": 0, "y": 0, "z": 0}
+			},
+			{
+				"rename": "Nomai_2_2",
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+				"parentPath": "Sector/GameObject_Area1/GameObject_Nomai_Group2",
+				"isRelativeToParent": true,
+				"position": {"x": -1, "y": 0, "z": 1},
+				"rotation": {"x": 0, "y": 120, "z": 0}
+			},
+			{
+				"rename": "Nomai_2_3",
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+				"parentPath": "Sector/GameObject_Area1/GameObject_Nomai_Group2",
+				"isRelativeToParent": true,
+				"position": {"x": 2, "y": 0, "z": 0.5},
+				"rotation": {"x": 0, "y": 240, "z": 0}
+			},
+			{
+				"rename": "Nomai_3_1",
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+				"parentPath": "Sector/GameObject_Area1/GameObject_Nomai_Group3",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": -1.25},
+				"rotation": {"x": 0, "y": 0, "z": 0}
+			},
+			{
+				"rename": "Nomai_3_2",
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+				"parentPath": "Sector/GameObject_Area1/GameObject_Nomai_Group3",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": 1.25},
+				"rotation": {"x": 0, "y": 180, "z": 0}
+			},
+
+			
+			// AREA 2: ARCHIVES
+			{
+				"rename": "GameObject_ArchiveBuilding",
+				"parentPath": "Sector/GameObject_Area2",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 0}
+			},
+			{
+				"rename": "Main_Building",
+				"assetBundle": "planets/assetbundle/callisthesisassetbundle",
+				"path": "Assets/PrefabsToBundle/CallisThesis_TestBuilding.prefab",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 0}
+			},
+			{
+				"rename": "GameObject_RoofAntenna",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building",
+				"isRelativeToParent": true,
+				"position" : {"x": -5, "y": 24, "z": -24}
+			},
+			{
+				"rename": "Main_Building_Gateway",
+				"path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_City/Interactables_City/CityDoors/Prefab_NOM_Gateway",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building",
+				"isRelativeToParent": true,
+				"position": {"x": -11, "y": 0, "z": 6},
+				"rotation": {"x": 0, "y": 270, "z": 0}
+			},
+			{
+				"rename": "GameObject_FrontDesk",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": -3},
+				"rotation": {"x": 0, "y": 90, "z": 0}
+			},
+			{
+				"rename": "FrontDesk_Desk",
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Props_NOM_Table",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_FrontDesk",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": 0},
+				"rotation": {"x": 0, "y": 90, "z": 0}
+			}, 
+			{
+				"rename": "FrontDesk_Nomai",
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_FrontDesk",
+				"isRelativeToParent": true,
+				"deactivationCondition": "CALLISTHESIS_CONDITION_FRONTDESK_LUNCHBREAK",
+				"blinkWhenActiveChanged": false,
+				"position": {"x": 0, "y": 0, "z": -2}
+			}, 
+			{
+				"rename": "FrontDesk_Recorder",
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_HangingCity/Sector_HangingCity_BlackHoleForge/BlackHoleForgePivot/Props_BlackHoleForge/Prefab_NOM_Staff",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_FrontDesk",
+				"isRelativeToParent": true,
+				"activationCondition": "CALLISTHESIS_CONDITION_FRONTDESK_LUNCHBREAK",
+				"blinkWhenActiveChanged": false,
+				"position": {"x": 0, "y": 0, "z": -2}
+			},
+			{
+				"rename": "GameObject_ThesisScroll",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/",
+				"isRelativeToParent": true,
+				"activationCondition": "CALLISTHESIS_CONDITION_THESIS_DOWNLOADED",
+				"blinkWhenActiveChanged": true,
+				"position": {"x": 0, "y": 0, "z": 0}
+			},
+			{
+				"rename": "GameObject_TicketDispenser",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building",
+				"isRelativeToParent": true,
+				"position": {"x": -4, "y": 0, "z": 9},
+				"rotation": {"x": 0, "y": 0, "z": 0}
+			},
+			{
+				"rename": "GameObject_TicketDispenserDialogue",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_TicketDispenser",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 0},
+				"deactivationCondition": "CALLISTHESIS_CONDITION_FRONTDESK_LUNCHBREAK",
+				"blinkWhenActiveChanged": false
+			},
+			{
+				"rename": "Nomai_Guard",
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building",
+				"isRelativeToParent": true,
+				"position": {"x": 3, "y": 0, "z": 1.5},
+				"rotation": {"x": 0, "y": 270, "z": 0}
+			},
+			{
+				"rename": "GameObject_NomaiQueue",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building",
+				"isRelativeToParent": true,
+				"position": {"x": 3.5, "y": 0, "z": -3},
+				"rotation": {"x": 0, "y": 270, "z": 0}
+			},
+			{
+				"rename": "Queueing_Nomai_1",
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_NomaiQueue",
+				"isRelativeToParent": true,
+				"deactivationCondition": "CALLISTHESIS_CONDITION_ASTER_TICKET"
+			},
+			{
+				"rename": "Queueing_Nomai_2",
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_NomaiQueue",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": -2},
+				"deactivationCondition": "CALLISTHESIS_CONDITION_ASTER_TICKET"
+			},
+			{
+				"rename": "Aster",
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building",
+				"isRelativeToParent": true,
+				"position": {"x": 7, "y": 0, "z": 0},
+				"rotation": {"x": 0, "y": 180, "z": 0},
+				"deactivationCondition": "CALLISTHESIS_CONDITION_ASTER_TICKET"
+			},
+			{
+				"rename": "Aster_Resting",
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_EYE/Interactables_EYEState/ConversationPivot/Character_NOM_Solanum/Nomai_ANIM_SkyWatching_Idle",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building",
+				"isRelativeToParent": true,
+				"position": {"x": 1, "y": 0, "z": 8.5},
+				"rotation": {"x": 0, "y": 180, "z": 0},
+				"activationCondition": "CALLISTHESIS_CONDITION_ASTER_TICKET"
+			},
+			{
+				"rename": "Bench_With_Skeleton",
+				"path": "BrittleHollow_Body/Sector_BH/Sector_NorthHemisphere/Sector_NorthPole/Sector_NorthPoleSurface/Props_NorthPoleSurface/OtherComponentsGroup/LowBuilding/Prefab_NOM_SimpleChair",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building",
+				"isRelativeToParent": true,
+				"position": {"x": 6, "y": 0, "z": 9},
+				"rotation": {"x": 0, "y": 180, "z": 0}
+			},
+			{
+				"rename": "Nomai_On_Ceiling",
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/QuantumDeadNomaiSuit/State_2",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 23.5, "z": -13},
+				"rotation": {"x": 0, "y": 180, "z": 180}
+			},
+			{
+				"rename": "Ernesto",
+				"path": "Anglerfish_Body/Beast_Anglerfish",
+				"removeChildren" :[
+					"B_angler_root/B_angler_body01/B_angler_body02/B_angler_antenna01/B_angler_antenna02/B_angler_antenna03/B_angler_antenna04/B_angler_antenna05/B_angler_antenna06/B_angler_antenna07/B_angler_antenna08/B_angler_antenna09/B_angler_antenna10/B_angler_antenna11/B_angler_antenna12_end"
+				],
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building",
+				"isRelativeToParent": true,
+				"position": {"x": 4, "y": 0.5, "z": -12},
+				"rotation": {"x": 0, "y": 45, "z": 0},
+				"scale" : 0.02
+			},
+			
+			{
+				"rename": "GameObject_Shelves",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building",
+				"isRelativeToParent": true,
+				"position": {"x": -3.5, "y": 4, "z": -17},
+				"rotation": {"x": 0, "y": 270, "z": 0}
+			},
+			{
+				"rename": "Nomai_Under_Shelves",
+				"path": "QuantumMoon_Body/Sector_QuantumMoon/State_TH/Interactables_THState/QuantumDeadNomaiSuit/State_2",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building",
+				"isRelativeToParent": true,
+				"position": {"x": 8, "y": 12.2, "z": -17},
+				"rotation": {"x": 0, "y": 180, "z": 0}
+			},
+			
+			{
+				"rename": "GameObject_WallTexts",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building",
+				"isRelativeToParent": true,
+				"position": {"x": -9.71, "y": 5, "z": -20},
+				"rotation": {"x": 0, "y": 90, "z": 0}
+			},
+			{
+				"rename": "Whiteboard_1",
+				"path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/Surface_QRock_Shard/Prefab_NOM_Whiteboard (2)",
+				"removeChildren": ["ArcSocket/Prefab_NOM_Scroll"],
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 0}
+			},
+			{
+				"rename": "Whiteboard_2",
+				"path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/Surface_QRock_Shard/Prefab_NOM_Whiteboard (2)",
+				"removeChildren": ["ArcSocket/Prefab_NOM_Scroll"],
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 4, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 0}
+			},
+			{
+				"rename": "Whiteboard_3",
+				"path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/Surface_QRock_Shard/Prefab_NOM_Whiteboard (2)",
+				"removeChildren": ["ArcSocket/Prefab_NOM_Scroll"],
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 8, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 0}
+			},
+			{
+				"rename": "Whiteboard_4",
+				"path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/Surface_QRock_Shard/Prefab_NOM_Whiteboard (2)",
+				"removeChildren": ["ArcSocket/Prefab_NOM_Scroll"],
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 12, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 0}
+			},
+			{
+				"rename": "Whiteboard_5",
+				"path": "BrittleHollow_Body/Sector_BH/Sector_QuantumFragment/Interactables_QuantumFragment/Surface_QRock_Shard/Prefab_NOM_Whiteboard (2)",
+				"removeChildren": ["ArcSocket/Prefab_NOM_Scroll"],
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 16, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 0}
+			},
+
+			 // Position and rotation of scroll_1_A_2
+			 // Note: shelf width: z+1.25
+			 // Note: gap AB: x+3, gap BC: x+1
+			{
+				"rename": "GameObject_Scrolls",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves",
+				"isRelativeToParent": true,
+				"position": {"x": -3.2, "y": 1.3, "z": -1.3},
+				"rotation": {"x": 0, "y": 0, "z": 0}
+			}
+
+
+ 
+
+ 	 
+ 
+
+			
+			 
+ 	 
+ 
+
+		],
+		"dialogue": [
+			{
+				"xmlFile": "dialogues/main_dialogues/callis.xml",
+				"parentPath": "Sector/GameObject_Area1/GameObject_Callis/Callis",
+				"pathToAnimController": "Sector/GameObject_Area1/GameObject_Callis/Callis",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 1.5, "z": 0},
+				"radius": 2
+			},
+			{
+				"xmlFile": "dialogues/filler_dialogues/polish.xml",
+				"parentPath": "Sector/GameObject_Area1/GameObject_Nomai_Group2/Nomai_2_2",
+				"pathToAnimController": "Sector/GameObject_Area1/GameObject_Nomai_Group2/Nomai_2_2",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 1.5, "z": 0},
+				"radius": 2
+			},
+			{
+				"xmlFile": "dialogues/main_dialogues/frontdesk_guard.xml",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/Nomai_Guard",
+				"pathToAnimController": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/Nomai_Guard",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 1.5, "z": 0},
+				"radius": 2
+			},
+			{
+				"xmlFile": "dialogues/main_dialogues/frontdesk_ticketDispenser.xml",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_TicketDispenser/GameObject_TicketDispenserDialogue",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 1.5, "z": 0},
+				"radius": 2
+			},
+			{
+				"xmlFile": "dialogues/main_dialogues/aster.xml",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/Aster",
+				"pathToAnimController": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/Aster",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 1.5, "z": 0},
+				"radius": 2
+			},
+			{
+				"xmlFile": "dialogues/main_dialogues/aster.xml",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/Aster_Resting",
+				"pathToAnimController": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/Aster",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 1.5, "z": 0},
+				"radius": 2
+			},
+			{
+				"xmlFile": "dialogues/main_dialogues/frontdesk_recorder.xml",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_FrontDesk/FrontDesk_Recorder",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 1.5, "z": 0},
+				"radius": 2
+			},
+
+			{
+				"xmlFile": "dialogues/filler_dialogues/queueingNomai_1.xml",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_NomaiQueue/Queueing_Nomai_1",
+				"pathToAnimController": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_NomaiQueue/Queueing_Nomai_1",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 1.5, "z": 0},
+				"radius": 2
+			},
+			{
+				"xmlFile": "dialogues/filler_dialogues/queueingNomai_2.xml",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_NomaiQueue/Queueing_Nomai_2",
+				"pathToAnimController": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_NomaiQueue/Queueing_Nomai_2",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 1.5, "z": 0},
+				"radius": 2
+			},
+			{
+				"xmlFile": "dialogues/filler_dialogues/nomai_on_ceiling.xml",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/Nomai_On_Ceiling",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0.75, "z": -1.5},
+				"radius": 1
+			},
+			{
+				"xmlFile": "dialogues/filler_dialogues/ernesto.xml",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/Ernesto",
+				"pathToAnimController": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/Ernesto",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 1.5, "z": 0},
+				"radius": 2
+			}
+		],
+		"signals" :
+		[
+			{ 
+				"frequency" : "Nomai Archives",
+				"name" : "Archive Transponder",
+				"audio" : "audio/tts_test.mp3", 
+				"reveals": "CALLISTHESIS_SHIPLOG_ARCHIVE_SIGNAL",
+				"sourceRadius" : 3,
+				"identificationRadius" : 3,
+				"detectionRadius" : 3,
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_RoofAntenna",
+				"isRelativeToParent": true,
+				"position" : {"x": 0, "y": 0, "z": 0}
+			}
+		],
+		"translatorText": [
+			{
+				"rename": "TicketDispenser",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_TicketDispenser",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": 0},
+				"rotation": {"x": 0, "y": 180, "z": 0},
+				"xmlFile": "text/main_text/TicketDispenser.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Scroll_thesis",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ThesisScroll",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 1.15, "z": -2},
+				"rotation": {"x": 0, "y": 0, "z": 60},
+				"xmlFile": "text/main_text/scrolls/Scroll_thesis.xml",
+				"type": "scroll",
+				"seed": 123000
+			},
+			{
+				"rename": "Wall First Floor",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_WallTexts",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 0},
+				"xmlFile": "text/main_text/Wall_Floor1.xml",
+				"seed": 123001
+			},
+			{
+				"rename": "Wall Second Floor",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_WallTexts",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 4, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 0},
+				"xmlFile": "text/main_text/Wall_Floor2.xml",
+				"seed": 123002
+			},
+			{
+				"rename": "Wall Third Floor",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_WallTexts",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 8, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 0},
+				"xmlFile": "text/main_text/Wall_Floor3.xml",
+				"seed": 123003
+			},
+			{
+				"rename": "Wall Fourth Floor",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_WallTexts",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 12, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 0},
+				"xmlFile": "text/main_text/Wall_Floor4.xml",
+				"seed": 123004
+			},
+			{
+				"rename": "Wall Fifth Floor",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_WallTexts",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 16, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 0},
+				"xmlFile": "text/main_text/Wall_Floor5.xml",
+				"seed": 123005
+			},
+			// Main scrolls
+			// Base is position and rotation of scroll_1_A_2_2
+			// Note: shelf width: x+1.25
+			// Note: gap AB: z-3, gap BC: z-1
+			// Note: up one: x+-0.35 y+0.7
+			{
+				"rename": "Scroll_Bukrad",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 3.2, "y": 8.5, "z": -9.15},
+				"rotation": {"x": 345, "y": 350, "z": 0},
+				"xmlFile": "text/main_text/scrolls/Scroll_Bukrad.xml",
+				"type": "scroll",
+				"seed": 4560401
+			},
+			{
+				"rename": "Scroll_1_A_2",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 1.6, "y": 2.1, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/main_text/scrolls/Scroll_1_A_2.xml",
+				"type": "scroll",
+				"seed": 4560112
+			},
+			{
+				"rename": "Scroll_1_C_5",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 5, "y": 1.4, "z": -4},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/main_text/scrolls/Scroll_1_C_5.xml",
+				"type": "scroll",
+				"seed": 456013501
+			},
+			{
+				"rename": "Scroll_3_A_3",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 2.85, "y": 7.3, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/main_text/scrolls/Scroll_3_A_3.xml",
+				"type": "scroll",
+				"seed": 4560313
+			},
+			{
+				"rename": "Scroll_3_C_2",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 1.6, "y": 10.1, "z": -4},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/main_text/scrolls/Scroll_3_C_2.xml",
+				"type": "scroll",
+				"seed": 4560332
+			},
+			{
+				"rename": "Scroll_4_B_1",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 11, "z": -3.9},
+				"rotation": {"x": 90, "y": 10, "z": 0},
+				"xmlFile": "text/main_text/scrolls/Scroll_4_B_1.xml",
+				"type": "scroll",
+				"seed": 4560421
+			},
+			{
+				"rename": "Scroll_4_E_2",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 3, "y": 10.8, "z": -7.65},
+				"rotation": {"x": 0, "y": 15, "z": 0},
+				"xmlFile": "text/main_text/scrolls/Scroll_4_E_2.xml",
+				"type": "scroll",
+				"seed": 456045201
+			},
+			{
+				"rename": "Scroll_5_F_5",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 5, "y": 16, "z": -11},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/main_text/scrolls/Scroll_5_F_5.xml",
+				"type": "scroll",
+				"seed": 4560565
+			},
+			// Filler scrolls
+			{
+				"rename": "Scroll_1_01",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/filler_text/Scroll_1_01.xml",
+				"type": "scroll",
+				"seed": 4560101
+			},
+			{
+				"rename": "Scroll_1_02",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 4.1, "y": -0.7, "z": -7},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/filler_text/Scroll_1_02.xml",
+				"type": "scroll",
+				"seed": 4560102
+			},
+			{
+				"rename": "Scroll_1_03",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 2.85, "y": 0.7, "z": -8},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/filler_text/Scroll_1_03.xml",
+				"type": "scroll",
+				"seed": 4560103
+			},
+			{
+				"rename": "Scroll_1_04_1",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 4.1, "y": 0.7, "z": -3},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/filler_text/Scroll_1_01.xml",
+				"type": "scroll",
+				"seed": 4560103
+			},
+			{
+				"rename": "Scroll_1_04_2",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 0.35, "y": 0.7, "z": -4},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/filler_text/Scroll_1_02.xml",
+				"type": "scroll",
+				"seed": 4560103
+			},
+			{
+				"rename": "Scroll_1_04_3",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 1.6, "y": 0.7, "z": -4},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/filler_text/Scroll_1_03.xml",
+				"type": "scroll",
+				"seed": 4560103
+			},
+			{
+				"rename": "Scroll_1_04_4",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 0.35, "y": 2.1, "z": -7},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/filler_text/Scroll_1_02.xml",
+				"type": "scroll",
+				"seed": 4560103
+			},
+			{
+				"rename": "Scroll_1_04_5",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 8, "y": 0, "z": -7},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/filler_text/Scroll_1_01.xml",
+				"type": "scroll",
+				"seed": 4560103
+			},
+			{
+				"rename": "Scroll_1_04_6",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 2.5, "y": 1.4, "z": -11},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/filler_text/Scroll_1_01.xml",
+				"type": "scroll",
+				"seed": 4560103
+			},
+			{
+				"rename": "Scroll_2_01",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 0.35, "y": 3.3, "z": -3},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/filler_text/Scroll_2_01.xml",
+				"type": "scroll",
+				"seed": 456020101
+			},
+			{
+				"rename": "Scroll_2_02",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 3.75, "y": 4, "z": -4},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/filler_text/Scroll_2_02.xml",
+				"type": "scroll",
+				"seed": 4560202
+			},
+			{
+				"rename": "Scroll_2_03_1",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 2.85, "y": 4.7, "z": -3},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/filler_text/Scroll_2_01.xml",
+				"type": "scroll",
+				"seed": 4560202
+			},
+			{
+				"rename": "Scroll_2_03_2",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 5, "y": 5.4, "z": -7},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/filler_text/Scroll_2_02.xml",
+				"type": "scroll",
+				"seed": 4560202
+			},
+			{
+				"rename": "Scroll_2_03_3",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 1.25, "y": 5.4, "z": -8},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/filler_text/Scroll_2_01.xml",
+				"type": "scroll",
+				"seed": 4560202
+			},
+			{
+				"rename": "Scroll_2_03_4",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 4.1, "y": 3.3, "z": -11},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/filler_text/Scroll_2_02.xml",
+				"type": "scroll",
+				"seed": 4560202
+			},
+			{
+				"rename": "Scroll_3_01",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 9.4, "z": -7},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/filler_text/Scroll_3_01.xml",
+				"type": "scroll",
+				"seed": 4560301
+			},
+			{
+				"rename": "Scroll_3_02",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 3.75, "y": 8, "z": -8},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/filler_text/Scroll_3_02.xml",
+				"type": "scroll",
+				"seed": 4560302
+			},
+			{
+				"rename": "Scroll_3_03_1",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 5, "y": 9.4, "z": -3},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/filler_text/Scroll_3_01.xml",
+				"type": "scroll",
+				"seed": 4560302
+			},
+			{
+				"rename": "Scroll_3_03_2",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 5, "y": 8, "z": -7},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/filler_text/Scroll_3_02.xml",
+				"type": "scroll",
+				"seed": 4560302
+			},
+			{
+				"rename": "Scroll_3_03_3",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 0.35, "y": 8.7, "z": -11},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/filler_text/Scroll_3_01.xml",
+				"type": "scroll",
+				"seed": 4560302
+			},
+			{
+				"rename": "Scroll_4_01",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 5.35, "y": 14.1, "z": 0},
+				"rotation": {"x": 0, "y": 0, "z": 350},
+				"xmlFile": "text/filler_text/Scroll_4_01.xml",
+				"type": "scroll",
+				"seed": 4560401
+			},
+			{
+				"rename": "Scroll_4_02_1",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 9.7, "z": -10.1},
+				"rotation": {"x": 345, "y": 0, "z": 350},
+				"xmlFile": "text/filler_text/Scroll_4_01.xml",
+				"type": "scroll",
+				"seed": 4560401
+			}
+		],
+		"entryLocation": [
+			{
+				"id": "CALLISTHESIS_ENTRY_PLANET",
+				"parentPath": "Sector",
+				"isRelativeToParent": true,
+				"position": {"x":0, "y": 0,"z": 0},
+				"cloaked": false
+			},
+			{
+				"id": "CALLISTHESIS_ENTRY_FESTIVAL",
+				"parentPath": "Sector/GameObject_Area1",
+				"isRelativeToParent": true,
+				"position": {"x":0, "y": 0,"z": 0},
+				"cloaked": false
+			},
+			{
+				"id": "CALLISTHESIS_ENTRY_ARCHIVES",
+				"parentPath": "Sector/GameObject_Area2",
+				"isRelativeToParent": true,
+				"position": {"x":0, "y": 0,"z": 0},
+				"cloaked": false
+			}
+		]
+	},
+	"ShipLog": {
+		"xmlFile": "shiplog/CallisThesis_shiplog.xml",
+		"spriteFolder": "shiplog/sprites",
+        "mapMode": {
+            "revealedSprite": "shiplog/sprites/boiledEgg.png",
+            "outlineSprite": "shiplog/sprites/boiledEgg_Outline.png",
+            "invisibleWhenHidden": false
+        },
+		"initialReveal": ["CALLISTHESIS_SHIPLOG_PLANET_RUMOR"]
+	},
+
+	"Volumes": {
+		"creditsVolume": [
+			{
+				"creditsType": "kazoo",
+				"parentPath": "Sector/GameObject_Area1/GameObject_Callis/GameObject_JokeEnding",
+				"isRelativeToParent": true,
+				"radius": 3,
+				"gameOverText": "Callis made a fool of herself. You had a good laugh at her expense.",
+				"deathType": "meditation"
+			},
+			{
+				"creditsType": "fast",
+				"parentPath": "Sector/GameObject_Area1/GameObject_Callis/GameObject_ModEnding",
+				"isRelativeToParent": true,
+				"radius": 3,
+				"gameOverText": "Thanks to you, Callis was able to present her thesis.",
+				"deathType": "meditation"
+			}
+		],
+		"revealVolumes": [
+			{
+				"revealOn": "enter",
+				"revealFor": "both",
+				"reveals": ["CALLISTHESIS_SHIPLOG_FESTIVAL_RUMOR_PLANET_LINK","CALLISTHESIS_SHIPLOG_PLANET_EXPLORE_FESTIVAL","CALLISTHESIS_SHIPLOG_FESTIVAL_EXPLORE_BASIC"],
+				"parentPath": "Sector/GameObject_Area1/",
+				"isRelativeToParent": true,
+				"position": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"radius": 40.0
+			},
+			{
+				"revealOn": "enter",
+				"revealFor": "both",
+				"reveals": ["CALLISTHESIS_SHIPLOG_ARCHIVES_RUMOR_PLANET_LINK","CALLISTHESIS_SHIPLOG_PLANET_EXPLORE_ARCHIVE","CALLISTHESIS_SHIPLOG_ARCHIVE_EXPLORE_BASIC"],
+				"parentPath": "Sector/GameObject_Area2/",
+				"isRelativeToParent": true,
+				"position": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"radius": 20.0
+			}
+		]
+	}
+}

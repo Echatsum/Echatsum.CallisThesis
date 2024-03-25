@@ -1,0 +1,239 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Aster</NameField>
+
+	<!-- CONDITION/SHIPLOG
+		- CALLISTHESIS_SHIPLOG_FESTIVAL_EXPLORE_CALLIS;			Used in START_DEFAULT
+
+		- CALLISTHESIS_CONDITION_ASTER_TICKET;					Set in CUTTING_LINE_6
+		- CALLISTHESIS_CONDITION_FRONTDESK_LUNCHBREAK;			Set in CUTTING_LINE_6 and other files, Used in START_DEFAULT
+
+
+		TODO BUKRAD
+	
+	-->
+
+	<!-- ENTRY NODES-->
+	<DialogueNode>
+		<Name>START_DEFAULT</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Good morning dear.</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Good morning ma'am.</Text>
+			</DialogueOption>
+
+			<DialogueOption>
+				<CancelledCondition>CALLISTHESIS_CONDITION_FRONTDESK_LUNCHBREAK</CancelledCondition>
+				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_FESTIVAL_EXPLORE_CALLIS</RequiredLogCondition>
+				<Text>I'm sorry ma'am but I'm in a hurry, could I get in front please?</Text>
+				<DialogueTarget>CUTTING_LINE_1</DialogueTarget>
+			</DialogueOption>
+
+			<DialogueOption>
+				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_PASSWORD_PART_3_CLUE</RequiredLogCondition>
+				<Text>Excuse me ma'am, do you know anything about bukrads by any chance?</Text>
+				<DialogueTarget>BUKRAD_1</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<!-- CUTTING LINE NODES-->
+	
+	<!-- Linear from CUTTING_LINE_1 to CUTTING_LINE_6-->
+	<DialogueNode>
+		<Name>CUTTING_LINE_1</Name>
+		<Dialogue>
+			<Page>Excuse me?</Page>
+			<Page>How utterly rude!</Page>
+			<Page>This is no way to talk to an old lady!</Page>
+			<Page>Did not even say hello and they want to cut in line.</Page>
+			<Page>Kids these days!</Page>
+			<Page>Back in my time we patiently waited in line like well-behaved nomai.</Page>
+			<Page>We would even offer our place to our elders.</Page>
+			<Page>I remember one day when I was 6, this old gentleman entered the salad shop.</Page>
+			<Page>Everyone stepped aside and let him order first. That's how polite we were back in the day.</Page>
+			<Page>The old man didn't even have to pay, the staff was so polite.</Page>
+			<Page>The fact he was the owner had nothing to do with it, mind you.</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>..</Text>
+				<DialogueTarget>CUTTING_LINE_2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>*leave*</Text>
+				<DialogueTarget></DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>CUTTING_LINE_2</Name>
+		<Dialogue>
+			<Page>Oh, how I used to love this salad restaurant.</Page>
+			<Page>Was it the 'Salad Palace'? This old goat certainly spent a lot of days in there.</Page>
+			<Page>Their lettuce with cherry tomatoes was truly divine.</Page>
+			<Page>To this day I wonder how they got their vegetables so ripe.</Page>
+			<Page>Was it homegrown, or did they have their special supplier?</Page>
+			<Page>Youngsters take it for granted nowadays but fresh ingredients really do make a good meal.</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>..</Text>
+				<DialogueTarget>CUTTING_LINE_3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>*leave*</Text>
+				<DialogueTarget></DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>CUTTING_LINE_3</Name>
+		<Dialogue>
+			<Page>I tried myself at gardening, you know?</Page>
+			<Page>I had my perfect patch of land behind my house. Just the right amount of sunshine for a happy plant.</Page>
+			<Page>I also had acquired new overalls to fully immerse myself in gardening.</Page>
+			<Page>Ho-ho, boys would have fallen for how cute this little goat was in her gardening attire was.</Page>
+			<Page>But alas, I had to focus on my plants.</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>*zzz*</Text>
+				<DialogueTarget>CUTTING_LINE_4</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>*leave*</Text>
+				<DialogueTarget></DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>CUTTING_LINE_4</Name>
+		<Dialogue>
+			<Page>I also read a lot to know how to do this properly.</Page>
+			<Page>You probably should read more dear, you never know what knowledge you might be missing.</Page>
+			<Page>My eyes are not good anymore, but I still enjoy a good scroll to read before going to bed.</Page>
+			<Page>Sometimes my dear Temu is kind enough to read it aloud for me, while I peacefully fall asleep.</Page>
+			<Page>You youngsters like to live your lives brash but one day you'll realize settling down can also be a blessing.</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>So what are you here for, ma'am?</Text>
+				<DialogueTarget>CUTTING_LINE_5</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>*leave*</Text>
+				<DialogueTarget></DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>CUTTING_LINE_5</Name>
+		<Dialogue>
+			<Page>Oh, it's these archive handlers who wouldn't know their left from their right.</Page>
+			<Page>I have been told that some scrolls have suffered some corruption issues.</Page>
+			<Page>So now they've brought this old goat to try and fix it.</Page>
+			<Page>I have a lot of my work stored in here and I would not want it lost because of some luddite didn't know how to handle a scroll.</Page>
+			<Page>My old bones are not enjoying standing up for so long, I think I will go sit for a while.</Page>
+			<Page>Thank you for holding me company, dear.</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>No problem, ma'am.</Text>
+				<DialogueTarget>CUTTING_LINE_6</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>CUTTING_LINE_6</Name>
+		<Dialogue>
+			<Page>Here, you can have my ticket since you were in a hurry.</Page>
+			<Page>I will grab another one once my legs are rested.</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Thank you, ma'am. Take care</Text>
+			</DialogueOption>
+		</DialogueOptionsList>
+
+		<SetCondition>CALLISTHESIS_CONDITION_ASTER_TICKET</SetCondition>
+		<SetCondition>CALLISTHESIS_CONDITION_FRONTDESK_LUNCHBREAK</SetCondition>
+	</DialogueNode>
+
+	<!-- BUKRAD NODES-->
+
+	<DialogueNode>
+		<Name>BUKRAD_1</Name>
+		<Dialogue>
+			<Page>Why of course, I am an expert of burkads.</Page>
+			<Page>That is why I am here, I was summoned to repair a corrupted scroll and rewrite the missing data.</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Oh that's such a relief. I need to know how many legs the red-bellied horned bukrad has.</Text>
+				<DialogueTarget>BUKRAD_2</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>BUKRAD_2</Name>
+		<Dialogue>
+			<Page>Ho-ho, what a peculiar request. Are you trying to pull a prank on this old lady, dear?</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>No.. Why would you think that?</Text>
+				<DialogueTarget>BUKRAD_3</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>BUKRAD_3</Name>
+		<Dialogue>
+			<Page>My dear, these bukrad are known among their cousins for being the only ones without legs.</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Oh. What? I mean, sure but- Okay then.</Text>
+				<ConditionToSet>CALLISTHESIS_BUKRAD_ACQUIRED</ConditionToSet>
+				<DialogueTarget>BUKRAD_4</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+
+		<RevealFacts>
+			<FactID>CALLISTHESIS_SHIPLOG_PASSWORD_PART_3_ANSWER</FactID>
+		</RevealFacts>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>BUKRAD_4</Name>
+		<Dialogue>
+			<Page>Everything alright, dear?</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Y-yeah I just feel like I could have got to this point much sooner. Thank you ma'am.</Text>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+</DialogueTree>
