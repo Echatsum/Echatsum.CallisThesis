@@ -239,8 +239,7 @@
 	<DialogueNode>
 		<Name>END_DEPLETED_TICKETS_1</Name>
 		<Dialogue>
-			<Page>Currently serving ticket #A103</Page>
-			<Page>Warning! This unit has ran out of paper and cannot dispense more tickets. Please notify the nearest employee for a paper refill.</Page>
+			<Page>Currently serving ticket #A103.\\nWarning! This unit has ran out of paper and cannot dispense more tickets. Please notify the nearest employee for a paper refill.</Page>
 		</Dialogue>
 		
 		<DialogueOptionsList>

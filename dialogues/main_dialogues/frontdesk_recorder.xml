@@ -17,10 +17,7 @@
 		<EntryCondition>DEFAULT</EntryCondition>
 		<Dialogue>
 			<Page>This unit is an automated helper for the Nomai Archives.</Page>
-			<Page>To add a scroll or tablet to our expanding archive, press 1.</Page>
-			<Page>To consult an existing scroll or tablet, press 2.</Page>
-			<Page>To conclude the interaction with this unit, press 3.</Page>
-			<Page>To list your options once more, press 4.</Page>
+			<Page>To add a scroll or tablet to our expanding archive, press 1.\\nTo consult an existing scroll or tablet, press 2.\\nTo conclude the interaction with this unit, press 3.\\nTo list your options once more, press 4.</Page>
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
@@ -45,10 +42,8 @@
 	<DialogueNode>
 		<Name>ADD_EDIT_1</Name>
 		<Dialogue>
-			<Page>We are currently experiencing severe data loss on upload.</Page>
-			<Page>As such, all addition or edit to the archives must be supervised by a handler.</Page>
-			<Page>We apologize for the inconvenience and assure you this measure is to protect your legacies stored here.</Page>
-			<Page>We advise that you wait for a handler to assist you.</Page>
+			<Page>We are currently experiencing severe data loss on upload.\\nAs such, all addition or edit to the archives must be supervised by a handler.</Page>
+			<Page>We apologize for the inconvenience and assure you this measure is to protect your legacies stored here.\\nWe advise that you wait for a handler to assist you.</Page>
 			<Page>Returning to this unit main menu.</Page>
 		</Dialogue>
 		<DialogueTarget>START_DEFAULT</DialogueTarget>
@@ -60,10 +55,7 @@
 		<Name>SEARCH_1</Name>
 		<Dialogue>
 			<Page>You are looking for an existing scroll or tablet.</Page>
-			<Page>If you are looking for a specific author, press 1.</Page>
-			<Page>If you want to search using a specific keyword, press 2.</Page>
-			<Page>To return to this unit's main menu, press 3.</Page>
-			<Page>To list your options once more, press 4.</Page>
+			<Page>If you are looking for a specific author, press 1.\\nIf you want to search using a specific keyword, press 2.\\nTo return to this unit's main menu, press 3.\\nTo list your options once more, press 4.</Page>
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
@@ -121,8 +113,7 @@
 			<Page>Thank you. Searching database for entries..</Page>
 			<Page>..</Page>
 			<Page>..</Page>
-			<Page>It appears this author elected to protect their entries with a password.</Page>
-			<Page>Please enter the password for author [Callis].</Page>
+			<Page>It appears this author elected to protect their entries with a password.\\nPlease enter the password for author [Callis].</Page>
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
@@ -182,8 +173,7 @@
 	<DialogueNode>
 		<Name>SEARCH_AUTHOR_PASSWORD_SUCCESS</Name>
 		<Dialogue>
-			<Page>Password valid. Welcome user [Callis]</Page>
-			<Page>Would you like to download a copy of your scroll?</Page>
+			<Page>Password valid. Welcome user [Callis].\\nWould you like to download a copy of your scroll?</Page>
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
@@ -228,8 +218,7 @@
 			<Page>Thank you. Searching database for entries..</Page>
 			<Page>..</Page>
 			<Page>..</Page>
-			<Page>[22 entries] found in the database.</Page>
-			<Page>Would you like to download one of the entries onto a new scroll?</Page>
+			<Page>[22 entries] found in the database.\\nWould you like to download one of the entries onto a new scroll?</Page>
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
@@ -249,9 +238,7 @@
 			<Page>Thank you. Searching database for entries..</Page>
 			<Page>..</Page>
 			<Page>..</Page>
-			<Page>[68 entries] found in the database.</Page>
-			<Page>This includes [1 entry] present in the rotating selection for public reading [4F5]</Page>
-			<Page>Would you like to download one of the entries onto a new scroll?</Page>
+			<Page>[68 entries] found in the database.\\nThis includes [1 entry] present in the rotating selection for public reading [4F5].\\nWould you like to download one of the entries onto a new scroll?</Page>
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
@@ -293,9 +280,7 @@
 		<Dialogue>
 			<Page>Thank you. Searching database for entries..</Page>
 			<Page>..</Page>
-			<Page>[345 entries] found in the database.</Page>
-			<Page>This includes [5 entries] present in the rotating selection for public reading [1A2, 3C2, 4B1, 4E3, 4F5]</Page>
-			<Page>Would you like to download one of the entries onto a new scroll?</Page>
+			<Page>[345 entries] found in the database.\\nThis includes [5 entries] present in the rotating selection for public reading [1A2, 3C2, 4B1, 4E3, 4F5].\\nWould you like to download one of the entries onto a new scroll?</Page>
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
@@ -336,8 +321,7 @@
 	<DialogueNode>
 		<Name>SEARCH_KEYWORD_2_3</Name>
 		<Dialogue>
-			<Page>The keyword [Thesis] has been marked as restricted, as it returns too many entries.</Page>
-			<Page>We recommend that you search by author name, or by the content of their thesis.</Page>
+			<Page>The keyword [Thesis] has been marked as restricted, as it returns too many entries.\\nWe recommend that you search by author name, or by the content of their thesis.</Page>
 		</Dialogue>
 		<DialogueTarget>SEARCH_1</DialogueTarget>
 	</DialogueNode>
@@ -347,8 +331,7 @@
 		<Dialogue>
 			<Page>Thank you. Searching database for entries..</Page>
 			<Page>..</Page>
-			<Page>[32 entries] found in the database.</Page>
-			<Page>Would you like to download one of the entries onto a new scroll?</Page>
+			<Page>[32 entries] found in the database.\\nWould you like to download one of the entries onto a new scroll?</Page>
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
@@ -367,8 +350,7 @@
 		<Dialogue>
 			<Page>Thank you. Searching database for entries..</Page>
 			<Page>..</Page>
-			<Page>[77 entries] found in the database.</Page>
-			<Page>Would you like to download one of the entries onto a new scroll?</Page>
+			<Page>[77 entries] found in the database.\\nWould you like to download one of the entries onto a new scroll?</Page>
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
@@ -387,13 +369,9 @@
 		<Dialogue>
 			<Page>%[$++~@!</Page>
 			<Page><![CDATA[<color=lightblue>..</color>]]></Page>
-			<Page><![CDATA[<color=lightblue>Good morning agent Hatchie.</color>]]></Page>
-			<Page><![CDATA[<color=lightblue>Central is glad you made it in one piece.</color>]]></Page>
-			<Page><![CDATA[<color=lightblue>Await further instructions on operation TLS.</color>]]></Page>
-			<Page><![CDATA[<color=lightblue>In the meantime, your assignment is to report on any strange activity on the neighboring planets.</color>]]></Page>
+			<Page><![CDATA[<color=lightblue>Good morning agent Hatchie. Central is glad you made it in one piece.</color>]]>\\n<![CDATA[<color=lightblue>Await further instructions on operation TLS.</color>]]>\\n<![CDATA[<color=lightblue>In the meantime, your assignment is to report on any strange activity on the neighboring planets.</color>]]></Page>
 			<Page>%[$++~@!</Page>
-			<Page>No entry found.</Page>
-			<Page>Returning to this unit main menu.</Page>
+			<Page>No entry found.\\nReturning to this unit main menu.</Page>
 		</Dialogue>
 		<DialogueTarget>START_DEFAULT</DialogueTarget>
 	</DialogueNode>
@@ -402,9 +380,7 @@
 	<DialogueNode>
 		<Name>SEARCH_DOWNLOAD</Name>
 		<Dialogue>
-			<Page>Starting download of the scroll..</Page>
-			<Page>Estimated download time.. [25 minutes]..</Page>
-			<Page>Please take a seat, your scroll will be available soon.</Page>
+			<Page>Starting download of the scroll..\\nEstimated download time.. [25 minutes]..\\nPlease take a seat, your scroll will be available soon.</Page>
 			<Page>Returning to this unit main menu.</Page>
 		</Dialogue>
 		<DialogueTarget>START_DEFAULT</DialogueTarget>
@@ -413,8 +389,7 @@
 	<DialogueNode>
 		<Name>SEARCH_END</Name>
 		<Dialogue>
-			<Page>Search cancelled.</Page>
-			<Page>Returning to this unit main menu.</Page>
+			<Page>Search cancelled.\\nReturning to this unit main menu.</Page>
 		</Dialogue>
 		<DialogueTarget>START_DEFAULT</DialogueTarget>
 	</DialogueNode>
@@ -424,9 +399,7 @@
 		<Name>SEARCH_DOWNLOAD_THESIS_1</Name>
 		<Dialogue>
 			<Page>Starting download of the scroll..</Page>
-			<Page>your premium account has perks such as a much faster download speed, as well as no limit on the amount of downloads per day.</Page>
-			<Page>Estimated download time.. [2 minutes]..</Page>
-			<Page>Please take a seat, your scroll will be available soon.</Page>
+			<Page>Your premium account has perks such as a much faster download speed, as well as no limit on the amount of downloads per day.\\nEstimated download time.. [2 minutes]..\\nPlease take a seat, your scroll will be available soon.</Page>
 		</Dialogue>
 		<DialogueTarget>SEARCH_DOWNLOAD_THESIS_2</DialogueTarget>
 	</DialogueNode>

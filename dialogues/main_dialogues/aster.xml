@@ -46,16 +46,10 @@
 	<DialogueNode>
 		<Name>CUTTING_LINE_1</Name>
 		<Dialogue>
-			<Page>Excuse me?</Page>
-			<Page>How utterly rude!</Page>
-			<Page>This is no way to talk to an old lady!</Page>
-			<Page>Did not even say hello and they want to cut in line.</Page>
-			<Page>Kids these days!</Page>
-			<Page>Back in my time we patiently waited in line like well-behaved nomai.</Page>
-			<Page>We would even offer our place to our elders.</Page>
-			<Page>I remember one day when I was 6, this old gentleman entered the salad shop.</Page>
-			<Page>Everyone stepped aside and let him order first. That's how polite we were back in the day.</Page>
-			<Page>The old man didn't even have to pay, the staff was so polite.</Page>
+			<Page>Excuse me? How utterly rude! This is no way to talk to an old lady!</Page>
+			<Page>Did not even say hello and they want to cut in line. Kids these days!</Page>
+			<Page>Back in my time we patiently waited in line like well-behaved nomai. We would even offer our place to our elders.</Page>
+			<Page>I remember one day when I was 6, this old gentleman entered the salad shop. Everyone stepped aside and let him order first. That's how polite we were back in the day. The old man didn't even have to pay, the staff was so polite.</Page>
 			<Page>The fact he was the owner had nothing to do with it, mind you.</Page>
 		</Dialogue>
 
@@ -74,12 +68,9 @@
 	<DialogueNode>
 		<Name>CUTTING_LINE_2</Name>
 		<Dialogue>
-			<Page>Oh, how I used to love this salad restaurant.</Page>
-			<Page>Was it the 'Salad Palace'? This old goat certainly spent a lot of days in there.</Page>
-			<Page>Their lettuce with cherry tomatoes was truly divine.</Page>
-			<Page>To this day I wonder how they got their vegetables so ripe.</Page>
-			<Page>Was it homegrown, or did they have their special supplier?</Page>
-			<Page>Youngsters take it for granted nowadays but fresh ingredients really do make a good meal.</Page>
+			<Page>Oh, how I used to love this salad restaurant. Was it the 'Salad Palace'? This old goat certainly spent a lot of days in there.</Page>
+			<Page>Their lettuce with cherry tomatoes was truly divine. To this day I wonder how they got their vegetables so ripe.</Page>
+			<Page>Was it homegrown, or did they have their special supplier? Youngsters take it for granted nowadays but fresh ingredients really do make a good meal.</Page>
 		</Dialogue>
 
 		<DialogueOptionsList>
@@ -98,10 +89,8 @@
 		<Name>CUTTING_LINE_3</Name>
 		<Dialogue>
 			<Page>I tried myself at gardening, you know?</Page>
-			<Page>I had my perfect patch of land behind my house. Just the right amount of sunshine for a happy plant.</Page>
-			<Page>I also had acquired new overalls to fully immerse myself in gardening.</Page>
-			<Page>Ho-ho, boys would have fallen for how cute this little goat was in her gardening attire was.</Page>
-			<Page>But alas, I had to focus on my plants.</Page>
+			<Page>I had my perfect patch of land behind my house. Just the right amount of sunshine for a happy plant. I also had acquired new overalls to fully immerse myself in gardening.</Page>
+			<Page>Ho-ho, boys would have fallen for how cute this little goat was in her gardening attire was. But alas, I had to focus on my plants.</Page>
 		</Dialogue>
 
 		<DialogueOptionsList>
@@ -119,10 +108,8 @@
 	<DialogueNode>
 		<Name>CUTTING_LINE_4</Name>
 		<Dialogue>
-			<Page>I also read a lot to know how to do this properly.</Page>
-			<Page>You probably should read more dear, you never know what knowledge you might be missing.</Page>
-			<Page>My eyes are not good anymore, but I still enjoy a good scroll to read before going to bed.</Page>
-			<Page>Sometimes my dear Temu is kind enough to read it aloud for me, while I peacefully fall asleep.</Page>
+			<Page>I also read a lot to know how to do this properly. You probably should read more dear, you never know what knowledge you might be missing.</Page>
+			<Page>My eyes are not good anymore, but I still enjoy a good scroll to read before going to bed. Sometimes my dear Temu is kind enough to read it aloud for me, while I peacefully fall asleep.</Page>
 			<Page>You youngsters like to live your lives brash but one day you'll realize settling down can also be a blessing.</Page>
 		</Dialogue>
 
@@ -141,12 +128,9 @@
 	<DialogueNode>
 		<Name>CUTTING_LINE_5</Name>
 		<Dialogue>
-			<Page>Oh, it's these archive handlers who wouldn't know their left from their right.</Page>
-			<Page>I have been told that some scrolls have suffered some corruption issues.</Page>
-			<Page>So now they've brought this old goat to try and fix it.</Page>
-			<Page>I have a lot of my work stored in here and I would not want it lost because of some luddite didn't know how to handle a scroll.</Page>
-			<Page>My old bones are not enjoying standing up for so long, I think I will go sit for a while.</Page>
-			<Page>Thank you for holding me company, dear.</Page>
+			<Page>Oh, it's these archive handlers who wouldn't know their left from their right.\\nI have been told that some scrolls have suffered some corruption issues.</Page>
+			<Page>So now they've brought this old goat to try and fix it.\\nI have a lot of my work stored in here and I would not want it lost because of some luddite didn't know how to handle a scroll.</Page>
+			<Page>My old bones are not enjoying standing up for so long, I think I will go sit for a while.\\nThank you for holding me company, dear.</Page>
 		</Dialogue>
 
 		<DialogueOptionsList>
@@ -160,8 +144,7 @@
 	<DialogueNode>
 		<Name>CUTTING_LINE_6</Name>
 		<Dialogue>
-			<Page>Here, you can have my ticket since you were in a hurry.</Page>
-			<Page>I will grab another one once my legs are rested.</Page>
+			<Page>Here, you can have my ticket since you were in a hurry.\\nI will grab another one once my legs are rested.</Page>
 		</Dialogue>
 
 		<DialogueOptionsList>
@@ -179,8 +162,7 @@
 	<DialogueNode>
 		<Name>BUKRAD_1</Name>
 		<Dialogue>
-			<Page>Why of course, I am an expert of burkads.</Page>
-			<Page>That is why I am here, I was summoned to repair a corrupted scroll and rewrite the missing data.</Page>
+			<Page>Why of course, I am an expert of burkads.\\nThat is why I am here, I was summoned to repair a corrupted scroll and rewrite the missing data.</Page>
 		</Dialogue>
 
 		<DialogueOptionsList>

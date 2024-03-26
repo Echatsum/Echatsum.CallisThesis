@@ -43,8 +43,7 @@
 		<Name>START_A</Name>
 		<EntryCondition>CALLISTHESIS_CONDITION_CALLIS_INITIAL_EXPLANATION</EntryCondition>
 		<Dialogue>
-			<Page>This is bad.. Real bad..</Page>
-			<Page>Did you find the scroll?</Page>
+			<Page>This is bad.. Real bad..\\nDid you find the scroll?</Page>
 		</Dialogue>
 
 		<DialogueOptionsList>
@@ -73,8 +72,7 @@
 		<Name>START_B</Name>
 		<EntryCondition>CALLISTHESIS_CONDITION_PASSWORD_CLUES_GIVEN</EntryCondition>
 		<Dialogue>
-			<Page>This is bad.. Real bad..</Page>
-			<Page>Did you find the scroll?</Page>
+			<Page>This is bad.. Real bad..\\nDid you find the scroll?</Page>
 		</Dialogue>
 
 		<DialogueOptionsList>
@@ -119,8 +117,7 @@
 	<DialogueNode>
 		<Name>CALLIS_INITIAL_EXPLANATION_2</Name>
 		<Dialogue>
-			<Page>Oh, well.. Erm.. this is a bit embarassing</Page>
-			<Page>You see, this is a big day for me. This is my first contribution to a festival and I'm about to present my thesis to the other Nomai.</Page>
+			<Page>Oh, well.. Erm.. this is a bit embarassing.\\nYou see, this is a big day for me. This is my first contribution to a festival and I'm about to present my thesis to the other Nomai.</Page>
 		</Dialogue>
 
 		<DialogueOptionsList>
@@ -134,8 +131,7 @@
 	<DialogueNode>
 		<Name>CALLIS_INITIAL_EXPLANATION_3</Name>
 		<Dialogue>
-			<Page>Well yes but I.. may have lost my thesis scroll?</Page>
-			<Page>I can't present my thesis without it. I'm going to look like such a fool in front of the others, this is so bad!</Page>
+			<Page>Well yes but I.. may have lost my thesis scroll?\\nI can't present my thesis without it. I'm going to look like such a fool in front of the others, this is so bad!</Page>
 		</Dialogue>
 
 		<DialogueOptionsList>
@@ -156,9 +152,7 @@
 		<Dialogue>
 			<Page>I've looked everywhere, so I don't think you could..</Page>
 			<Page>Wait..</Page>
-			<Page>That's it! I remember I had it saved in the archives (in case such event happened)</Page>
-			<Page>If I had the copy there I could present my thesis</Page>
-			<Page>Would you be so kind as to get it for me please?</Page>
+			<Page>That's it! I remember I had it saved in the archives (in case such event happened)\\nIf I had the copy there I could present my thesis.\\nWould you be so kind as to get it for me please?</Page>
 		</Dialogue>
 
 		<DialogueOptionsList>
@@ -190,8 +184,7 @@
 	<DialogueNode>
 		<Name>CALLIS_INITIAL_EXPLANATION_6</Name>
 		<Dialogue>
-			<Page>Thank you, you're a lifesaver! I believe it should be archived under my name, "Callis #001 - Thesis"</Page>
-			<Page>The archive building is on the North pole, if you've never been there.</Page>
+			<Page>Thank you, you're a lifesaver! I believe it should be archived under my name, "Callis #001 - Thesis".\\nThe archive building is on the North pole, if you've never been there.</Page>
 		</Dialogue>
 
 		<DialogueOptionsList>
@@ -213,8 +206,7 @@
 	<DialogueNode>
 		<Name>CALLIS_INITIAL_EXPLANATION_REMINDER</Name>
 		<Dialogue>
-			<Page>My thesis scroll in the archives. I believe it should be under my name, "Callis #001 - Thesis"</Page>
-			<Page>The archive building is on the North pole, if you've never been there.</Page>
+			<Page>My thesis scroll in the archives. I believe it should be under my name, "Callis #001 - Thesis".\\nThe archive building is on the North pole, if you've never been there.</Page>
 		</Dialogue>
 
 		<DialogueOptionsList>
@@ -231,9 +223,7 @@
 	<DialogueNode>
 		<Name>CALLIS_PASSWORD_CLUES_1</Name>
 		<Dialogue>
-			<Page>Oh, yes. I forgot about that.</Page>
-			<Page>I did set up a password so that the first witnesses of my work would be at my presentation.</Page>
-			<Page>I would have removed the password after the ceremony, I swear!</Page>
+			<Page>Oh, yes. I forgot about that.\\nI did set up a password so that the first witnesses of my work would be at my presentation.\\nI would have removed the password after the ceremony, I swear!</Page>
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
@@ -260,9 +250,7 @@
 	<DialogueNode>
 		<Name>CALLIS_PASSWORD_CLUES_3</Name>
 		<Dialogue>
-			<Page>No!</Page>
-			<Page>..</Page>
-			<Page>Maybe a bit. But I do have my note as to remember it, look!</Page>
+			<Page>No!\\n..\\nMaybe a bit. But I do have my note as to remember it, look!</Page>
 			<Page>"Hey me! You probably forgot your password again so I'm writing this secret code to retrieve it!".</Page>
 			<Page>"First part of the password is the age you were when your parents took you to your first festival".</Page>
 			<Page>"Second part of the password is the archive building broadcast signal (assuming it has not changed since I set up the password)</Page>
@@ -344,8 +332,7 @@
 	<DialogueNode>
 		<Name>CALLIS_PASSWORD_CLUES_REMINDER</Name>
 		<Dialogue>
-			<Page>Sure, here it is:</Page>
-			<Page>"Hey me! You probably forgot your password again so I'm writing this secret code to retrieve it!".</Page>
+			<Page>Sure, here it is:\\n"Hey me! You probably forgot your password again so I'm writing this secret code to retrieve it!".</Page>
 			<Page>"First part of the password is the age you were when your parents took you to your first festival - so that's 10".</Page>
 			<Page>"Second part of the password is the archive building broadcast signal (assuming it has not changed since I set up the password)</Page>
 			<Page>"Third part of the password is the number of legs of the red-bellied horned bukrad".</Page>
@@ -369,8 +356,7 @@
 	<DialogueNode>
 		<Name>CALLIS_END_DIALOGUE_ENDING_1</Name>
 		<Dialogue>
-			<Page>Thank you so much friend!</Page>
-			<Page>You saved my life today!</Page>
+			<Page>Thank you so much friend! You saved my life today!</Page>
 		</Dialogue>
 		<SetCondition>CALLISTHESIS_CONDITION_FINISHED_MOD</SetCondition>
 	</DialogueNode>
@@ -403,8 +389,7 @@
 	<DialogueNode>
 		<Name>CALLIS_END_DIALOGUE_ENDING_1_1_1</Name>
 		<Dialogue>
-			<Page>Oh. I'm sorry to hear..</Page>
-			<Page>Well, in any case</Page>
+			<Page>Oh. I'm sorry to hear.. Well, in any case..</Page>
 		</Dialogue>
 		<DialogueTarget>CALLIS_END_DIALOGUE_ENDING_1</DialogueTarget>
 	</DialogueNode>

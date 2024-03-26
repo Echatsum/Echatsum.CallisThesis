@@ -26,7 +26,7 @@
 		<ID>5</ID>
 		<ParentID>3</ParentID>
 		<LocationB />
-		<Text>Phaius: The cheese is made from the milk of the red-bellied horned bukrod, a docile 6-legged mammal.</Text>
+		<Text>Phaius: The cheese is made from the milk of the red-bellied horned bukrood, a docile 6-legged mammal.</Text>
 	</TextBlock>
 	<ShipLogConditions>
 		<RevealFact>
