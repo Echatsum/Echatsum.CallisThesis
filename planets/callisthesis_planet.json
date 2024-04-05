@@ -33,26 +33,21 @@
 			},
 			{
 				"rename": "GameObject_Area2",
-				"position": {"x": 0, "y": 283.8, "z": 10},
-				"rotation": {"x": 0, "y": 0, "z": 0}
+				"position": {"x": 0, "y": 283.8, "z": 10}
 			},
 
 			// AREA 1: FESTIVAL
 			{
 				"rename": "GameObject_PresentationBuilding",
 				"parentPath": "Sector/GameObject_Area1",
-				"isRelativeToParent": true,
-				"position": {"x": 0, "y": 0, "z": 0},
-				"rotation": {"x": 0, "y": 0, "z": 0}
+				"isRelativeToParent": true
 			},
 			{
 				"rename": "PresentationBuilding",
 				"assetBundle": "planets/assetbundle/callisthesisassetbundle",
 				"path": "Assets/PrefabsToBundle/CallisThesis_TestPresentationBooth.prefab",
 				"parentPath": "Sector/GameObject_Area1/GameObject_PresentationBuilding",
-				"isRelativeToParent": true,
-				"position": {"x": 0, "y": 0, "z": 0},
-				"rotation": {"x": 0, "y": 0, "z": 0}
+				"isRelativeToParent": true
 			},
 			{
 				"rename": "GameObject_Callis",
@@ -184,6 +179,17 @@
 				"isRelativeToParent": true,
 				"position": {"x": 0, "y": 0, "z": 0},
 				"rotation": {"x": 0, "y": 0, "z": 0}
+			},
+			{
+				"rename": "Door_Blockers",
+				"assetBundle": "planets/assetbundle/callisthesisassetbundle",
+				"path": "Assets/PrefabsToBundle/CallisThesis_ArchiveDoorBlockers.prefab",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building",
+				"isRelativeToParent": true,
+				"position": {"x": -7, "y": 4, "z": -14.25},
+				"rotation": {"x": 0, "y": 0, "z": 0},
+				"deactivationCondition": "CALLISTHESIS_PERSCONDITION_REMOVE_DOORBLOCKERS",
+				"blinkWhenActiveChanged": false
 			},
 			{
 				"rename": "GameObject_RoofAntenna",
@@ -401,10 +407,16 @@
 				"position": {"x": 0, "y": 16, "z": 0},
 				"rotation": {"x": 0, "y": 0, "z": 0}
 			},
+			
+			{
+				"rename": "GameObject_ShelfTexts",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building",
+				"isRelativeToParent": true,
+				"position": {"x": -1.75, "y": 4, "z": -20.7},
+				"rotation": {"x": 0, "y": 180, "z": 0},
+				"scale": 0.5
+			},
 
-			 // Position and rotation of scroll_1_A_2
-			 // Note: shelf width: z+1.25
-			 // Note: gap AB: x+3, gap BC: x+1
 			{
 				"rename": "GameObject_Scrolls",
 				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves",
@@ -546,6 +558,15 @@
 				"rotation": {"x": 0, "y": 0, "z": 60},
 				"xmlFile": "text/main_text/scrolls/Scroll_thesis.xml",
 				"type": "scroll",
+				"seed": 1230000
+			},
+			{
+				"rename": "Wall Balcony",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building",
+				"isRelativeToParent": true,
+				"position": {"x": -9.71, "y": 5, "z": -11},
+				"rotation": {"x": 0, "y": 90, "z": 0},
+				"xmlFile": "text/main_text/Wall_Balcony.xml",
 				"seed": 123000
 			},
 			{
@@ -593,6 +614,249 @@
 				"xmlFile": "text/main_text/Wall_Floor5.xml",
 				"seed": 123005
 			},
+
+			// Note: gap AB: x-6, gap BC: x-2
+			{
+				"rename": "Shelf 1A",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 0, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowA.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 1B",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -6, "y": 0, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowB.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 1C",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -8, "y": 0, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowC.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 1D",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -14, "y": 0, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowD.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 1E",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -16, "y": 0, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowE.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 1F",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -22, "y": 0, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowF.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 2A",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 8, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowA.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 2B",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -6, "y": 8, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowB.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 2C",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -8, "y": 8, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowC.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 2D",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -14, "y": 8, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowD.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 2E",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -16, "y": 8, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowE.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 2F",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -22, "y": 8, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowF.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 3A",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 16, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowA.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 3B",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -6, "y": 16, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowB.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 3C",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -8, "y": 16, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowC.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 3D",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -14, "y": 16, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowD.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 3E",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -16, "y": 16, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowE.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 3F",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -22, "y": 16, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowF.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 4A",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 24, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowA.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 4B",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -6, "y": 24, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowB.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 4C",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -8, "y": 24, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowC.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 4D",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -14, "y": 24, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowD.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 4E",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -16, "y": 24, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowE.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 4F",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -22, "y": 24, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowF.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 5A",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": 0, "y": 32, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowA.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 5B",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -6, "y": 32, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowB.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 5C",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -8, "y": 32, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowC.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 5D",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -14, "y": 32, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowD.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 5E",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -16, "y": 32, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowE.xml",
+				"type": "trailmarker"
+			},
+			{
+				"rename": "Shelf 5F",
+				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_ShelfTexts",
+				"isRelativeToParent": true,
+				"position": {"x": -22, "y": 32, "z": 0},
+				"xmlFile": "text/main_text/Shelf_RowF.xml",
+				"type": "trailmarker"
+			},
+
 			// Main scrolls
 			// Base is position and rotation of scroll_1_A_2_2
 			// Note: shelf width: x+1.25
@@ -753,7 +1017,7 @@
 				"rename": "Scroll_1_04_5",
 				"parentPath": "Sector/GameObject_Area2/GameObject_ArchiveBuilding/Main_Building/GameObject_Shelves/GameObject_Scrolls",
 				"isRelativeToParent": true,
-				"position": {"x": 8, "y": 0, "z": -7},
+				"position": {"x": 5, "y": 0, "z": -7},
 				"rotation": {"x": 0, "y": 0, "z": 350},
 				"xmlFile": "text/filler_text/Scroll_1_01.xml",
 				"type": "scroll",
@@ -942,7 +1206,7 @@
 				"parentPath": "Sector/GameObject_Area1/GameObject_Callis/GameObject_JokeEnding",
 				"isRelativeToParent": true,
 				"radius": 3,
-				"gameOverText": "Callis made a fool of herself. You had a good laugh at her expense.",
+				"gameOverText": "$CALLISTHESIS_GAMEOVER_FAKE",
 				"deathType": "meditation"
 			},
 			{
@@ -950,7 +1214,7 @@
 				"parentPath": "Sector/GameObject_Area1/GameObject_Callis/GameObject_ModEnding",
 				"isRelativeToParent": true,
 				"radius": 3,
-				"gameOverText": "Thanks to you, Callis was able to present her thesis.",
+				"gameOverText": "$CALLISTHESIS_GAMEOVER_THESIS",
 				"deathType": "meditation"
 			}
 		],

@@ -1,13 +1,10 @@
 <DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
-	<NameField>Allium</NameField>
+	<NameField>$CALLISTHESIS_QUEUEINGNOMAI2_NAME</NameField>
 
 	<!-- ENTRY NODES-->
-	<DialogueNode>
-		<Name>START_DEFAULT</Name>
+	<DialogueNode><Name>START_DEFAULT</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
-		<Dialogue>
-			<Page>I would rather do anything else other than be here.</Page>
-		</Dialogue>
+
+		<Dialogue><Page>$CALLISTHESIS_QUEUEINGNOMAI2_DEFAULT</Page></Dialogue>
 	</DialogueNode>
-	
 </DialogueTree>

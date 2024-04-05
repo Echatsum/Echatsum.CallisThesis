@@ -1,33 +1,23 @@
 <DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
-	<NameField>Ernesto</NameField>
+	<NameField>$CALLISTHESIS_ERNESTO_NAME</NameField>
 
 	<!-- ENTRY NODES-->
 	<DialogueNode>
 		<Name>START_DEFAULT</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
-		<Dialogue>
-			<Page>Hey</Page>
-		</Dialogue>
 
-		<DialogueOptionsList>
-			<DialogueOption>
-				<Text>Ernesto? What are you doing here?</Text>
-				<DialogueTarget>ERNESTO_REPLY_1</DialogueTarget>
-			</DialogueOption>
-		</DialogueOptionsList>
+		<Dialogue><Page>$CALLISTHESIS_ERNESTO_1</Page></Dialogue>
+		<DialogueOptionsList><DialogueOption>
+			<Text>$CALLISTHESIS_ERNESTO_1_REPLY</Text>
+			<DialogueTarget>ERNESTO_REPLY_1</DialogueTarget>
+		</DialogueOption></DialogueOptionsList>
 	</DialogueNode>
 	
 	<DialogueNode>
 		<Name>ERNESTO_REPLY_1</Name>
-		<Dialogue>
-			<Page>Tax evasion.</Page>
-		</Dialogue>
-
-		<DialogueOptionsList>
-			<DialogueOption>
-				<Text>Oh. Alright then, carry on.</Text>
-			</DialogueOption>
-		</DialogueOptionsList>
+		<Dialogue><Page>$CALLISTHESIS_ERNESTO_2</Page></Dialogue>
+		<DialogueOptionsList><DialogueOption>
+			<Text>$CALLISTHESIS_ERNESTO_2_REPLY</Text>
+		</DialogueOption></DialogueOptionsList>
 	</DialogueNode>
-	
 </DialogueTree>

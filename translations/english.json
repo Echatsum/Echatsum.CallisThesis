@@ -1,0 +1,408 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+    "UIDictionary": {
+      "$CALLISTHESIS_GAMEOVER_THESIS": "Thanks to you, Callis was able to present her thesis.",
+      "$CALLISTHESIS_GAMEOVER_FAKE": "Callis made a fool of herself. You had a good laugh at her expense."
+    },
+    "DialogueDictionary": {
+        // == Festival Area ==
+        // -- Main Dialogues --
+        // Callis
+        "$CALLISTHESIS_CALLIS_NAME": "Callis",
+        "$CALLISTHESIS_CALLIS_DEFAULT": "Oh no.. This is bad.. Real bad..",
+        "$CALLISTHESIS_CALLIS_DEFAULT_CHOICE_HI": "Hello?",
+        "$CALLISTHESIS_CALLIS_DEFAULT_CHOICE_THESIS": "Hey. I think you dropped this.",
+        
+        "$CALLISTHESIS_CALLIS_POSTINITIAL": "This is bad.. Real bad..\\nDid you find the scroll?",
+        "$CALLISTHESIS_CALLIS_POSTINITIAL_CHOICE_THESIS": "Yes. Here it is.",
+        "$CALLISTHESIS_CALLIS_POSTINITIAL_CHOICE_NO": "No, not yet.",
+        "$CALLISTHESIS_CALLIS_POSTINITIAL_CHOICE_PASSWORD": "No, I need a password to access it.",
+        "$CALLISTHESIS_CALLIS_POSTINITIAL_CHOICE_REM": "What am I looking for again?",
+        
+        "$CALLISTHESIS_CALLIS_POSTPASSWORD": "This is bad.. Real bad..\\nDid you find the scroll?",
+        "$CALLISTHESIS_CALLIS_POSTPASSWORD_CHOICE_THESIS": "Yes. Here it is.",
+        "$CALLISTHESIS_CALLIS_POSTPASSWORD_CHOICE_NO": "No, not yet.",
+        "$CALLISTHESIS_CALLIS_POSTPASSWORD_CHOICE_PASSWORDREM": "Can you remind me the password clues?",
+        "$CALLISTHESIS_CALLIS_POSTPASSWORD_CHOICE_REM": "What am I looking for again?",
+        
+        "$CALLISTHESIS_CALLIS_ENDDIALOGUE": "Please be quick..",
+        
+        "$CALLISTHESIS_CALLIS_ENDING_FAST": "Wait, is that..",
+        "$CALLISTHESIS_CALLIS_ENDING_SLOW_1": "I hope it was not too hard to get.",
+        "$CALLISTHESIS_CALLIS_ENDING_SLOW_1_CHOICE_POS": "It's okay, I learned a lot of things.",
+        "$CALLISTHESIS_CALLIS_ENDING_SLOW_1_CHOICE_NEG": "I never want to hear about bukrads ever again.",
+        "$CALLISTHESIS_CALLIS_ENDING_SLOW_2": "Oh. I'm sorry to hear.. Well, in any case..",
+        "$CALLISTHESIS_CALLIS_ENDING_BASE": "Thank you so much friend! You saved my life today!",
+        
+        "$CALLISTHESIS_CALLIS_INITIAL_1": "Oh hi! My name is Callis. I don't think I've met you before?",
+        "$CALLISTHESIS_CALLIS_INITIAL_1_REPLY": "What's wrong? You seemed to be worried about something.",
+        "$CALLISTHESIS_CALLIS_INITIAL_2": "Oh, well.. Erm.. this is a bit embarassing.\\nYou see, this is a big day for me. This is my first contribution to a festival and I'm about to present my thesis to the other Nomai.",
+        "$CALLISTHESIS_CALLIS_INITIAL_2_REPLY": "Isn't this a good thing?",
+        "$CALLISTHESIS_CALLIS_INITIAL_3": "Well yes but I.. may have lost my thesis scroll?\\nI can't present my thesis without it. I'm going to look like such a fool in front of the others, this is so bad!",
+        "$CALLISTHESIS_CALLIS_INITIAL_3_CHOICE_HELP": "Maybe I could help?",
+        "$CALLISTHESIS_CALLIS_INITIAL_3_CHOICE_LEAVE": "Oh. Well that's sure to be entertaining. See you then!",
+        "$CALLISTHESIS_CALLIS_INITIAL_4_1": "I've looked everywhere, so I don't think you could..",
+        "$CALLISTHESIS_CALLIS_INITIAL_4_2": "Wait..",
+        "$CALLISTHESIS_CALLIS_INITIAL_4_3": "That's it! I remember I had it saved in the archives (in case such event happened)\\nIf I had the copy there I could present my thesis.\\nWould you be so kind as to get it for me please?",
+        "$CALLISTHESIS_CALLIS_INITIAL_4_CHOICE_POS": "Sounds like a plan.",
+        "$CALLISTHESIS_CALLIS_INITIAL_4_CHOICE_NEG": "Not to be rude, but can't you get it yourself?",
+        "$CALLISTHESIS_CALLIS_INITIAL_5": "I'm afraid I have to stay here. I still have things to prepare and people would notice if I was gone.",
+        "$CALLISTHESIS_CALLIS_INITIAL_5_REPLY": "Fair enough. What is the scroll you need then?",
+        "$CALLISTHESIS_CALLIS_INITIAL_6": "Thank you, you're a lifesaver! I believe it should be archived under my name, \"Callis #001 - Thesis\".\\nThe archive building is on the North pole, if you've never been there.",
+        "$CALLISTHESIS_CALLIS_INITIAL_6_REPLY": "I'll be back with it.",
+        "$CALLISTHESIS_CALLIS_INITIAL_REM": "My thesis scroll in the archives. I believe it should be under my name, \"Callis #001 - Thesis\".\\nThe archive building is on the North pole, if you've never been there.",
+        "$CALLISTHESIS_CALLIS_INITIAL_REM_REPLY": "I'll be back with it.",
+        
+        "$CALLISTHESIS_CALLIS_PASSWORD_1": "Oh, yes. I forgot about that.\\nI did set up a password so that the first witnesses of my work would be at my presentation.\\nI would have removed the password after the ceremony, I swear!",
+        "$CALLISTHESIS_CALLIS_PASSWORD_1_REPLY": "What's the password then? We sort of need it now, <![CDATA[<i>before</i>]]> the ceremony.",
+        "$CALLISTHESIS_CALLIS_PASSWORD_2_1": "Yes of course. Let me think. The password was..",
+        "$CALLISTHESIS_CALLIS_PASSWORD_2_2": "It was..",
+        "$CALLISTHESIS_CALLIS_PASSWORD_2_REPLY": "Did you forget your password as well?",
+        "$CALLISTHESIS_CALLIS_PASSWORD_3_1": "No!\\n..\\nMaybe a bit. But I do have my note as to remember it, look!",
+        "$CALLISTHESIS_CALLIS_PASSWORD_3_2": "\"Hey me! You probably forgot your password again so I'm writing this secret code to retrieve it!\".",
+        "$CALLISTHESIS_CALLIS_PASSWORD_3_3": "\"First part of the password is the age you were when your parents took you to your first festival\".",
+        "$CALLISTHESIS_CALLIS_PASSWORD_3_4": "\"Second part of the password is the archive building broadcast signal (assuming it has not changed since I set up the password)\"",
+        "$CALLISTHESIS_CALLIS_PASSWORD_3_5": "\"Third part of the password is the number of legs of the red-bellied horned bukrad\".",
+        "$CALLISTHESIS_CALLIS_PASSWORD_3_REPLY": "I did not understand one bit of this.",
+        "$CALLISTHESIS_CALLIS_PASSWORD_4_1": "Well I made it complicated so that the password would be secure.",
+        "$CALLISTHESIS_CALLIS_PASSWORD_4_2": "For the first part, it's 10. I will always remember the day of my first festival. I met so many people and learned so many amazing things!",
+        "$CALLISTHESIS_CALLIS_PASSWORD_4_REPLY": "And the rest?",
+        "$CALLISTHESIS_CALLIS_PASSWORD_5": "Well..",
+        "$CALLISTHESIS_CALLIS_PASSWORD_5_REPLY": "You forgot?",
+        "$CALLISTHESIS_CALLIS_PASSWORD_6": "I forgot.",
+        "$CALLISTHESIS_CALLIS_PASSWORD_6_REPLY": "I figured.",
+        "$CALLISTHESIS_CALLIS_PASSWORD_7": "Good luck?",
+        "$CALLISTHESIS_CALLIS_PASSWORD_7_CHOICE_POS": "Thanks, I guess.",
+        "$CALLISTHESIS_CALLIS_PASSWORD_7_CHOICE_NEG": "You know what, I'm going to go explore another planet first.",
+        "$CALLISTHESIS_CALLIS_PASSWORD_REM_1": "Sure, here it is:\\n\"Hey me! You probably forgot your password again so I'm writing this secret code to retrieve it!\".",
+        "$CALLISTHESIS_CALLIS_PASSWORD_REM_2": "\"First part of the password is the age you were when your parents took you to your first festival\".",
+        "$CALLISTHESIS_CALLIS_PASSWORD_REM_3": "\"Second part of the password is the archive building broadcast signal (assuming it has not changed since I set up the password)\"",
+        "$CALLISTHESIS_CALLIS_PASSWORD_REM_4": "\"Third part of the password is the number of legs of the red-bellied horned bukrad\".",
+        "$CALLISTHESIS_CALLIS_PASSWORD_REM_REPLY": "10, broadcast signal, legs of bukrad, TODO. Got it.",
+        
+        // -- Filler Dialogues --
+        // Nomai Linguist
+        "$CALLISTHESIS_NOMAILINGUIST_NAME": "Nomai linguist",
+        "$CALLISTHESIS_NOMAILINGUIST_DEFAULT": "Nie mówię po polsku.", // Polish sentence in English version, meaning (as far as I can trust google) "I do not speak Polish"
+        "$CALLISTHESIS_NOMAILINGUIST_DEFAULT_REPLY": "Wow! Out of all the mods, this one has the most polish!", // Good luck to whoever trying to translate that pun
+
+        // == Archives Area ==
+        // -- Filler Dialogues --
+        // Ernesto
+        "$CALLISTHESIS_ERNESTO_NAME": "Ernesto",
+        "$CALLISTHESIS_ERNESTO_1": "Hey",
+        "$CALLISTHESIS_ERNESTO_1_REPLY": "Ernesto? What are you doing here?",
+        "$CALLISTHESIS_ERNESTO_2": "Tax evasion.",
+        "$CALLISTHESIS_ERNESTO_2_REPLY": "Oh. Alright then, carry on.",
+        // Nomai stuck on ceiling
+        "$CALLISTHESIS_NOMAIONCEILING_NAME": "Coryne",
+        "$CALLISTHESIS_NOMAIONCEILING_1": "Help..",
+        "$CALLISTHESIS_NOMAIONCEILING_2": "The beam.. is too strong..",
+        // Queueing Nomai 1
+        "$CALLISTHESIS_QUEUEINGNOMAI1_NAME": "Astilbe",
+        "$CALLISTHESIS_QUEUEINGNOMAI1_1": "Almost my turn, at last..",
+        "$CALLISTHESIS_QUEUEINGNOMAI1_2": "I should make it in time for the festival at the equator.",
+        // Queueing Nomai 2
+        "$CALLISTHESIS_QUEUEINGNOMAI2_NAME": "Allium",
+        "$CALLISTHESIS_QUEUEINGNOMAI2_DEFAULT": "I would rather do anything else other than be here.",
+
+        // -- Main Dialogues --
+        // Frontdesk guard
+        "$CALLISTHESIS_FRONTDESKGUARD_NAME": "Kania",
+        "$CALLISTHESIS_FRONTDESKGUARD_DEFAULT": "Please wait in line for your turn.",
+        "$CALLISTHESIS_FRONTDESKGUARD_DEFAULT_REPLY": "But this is urgent!",
+        "$CALLISTHESIS_FRONTDESKGUARD_REFUSAL": "We are doing our best to accomodate for eveyone. Please grab a ticket from the dispenser at the back and wait for your turn.",
+        "$CALLISTHESIS_FRONTDESKGUARD_POSTREFUSAL": "Please grab a ticket from the dispenser at the back and wait for your turn.",
+        "$CALLISTHESIS_FRONTDESKGUARD_LUNCHBREAK": "Our desk attendant is on lunch break, but you can use the automated helper.",
+
+        // Ticket dispenser
+        "$CALLISTHESIS_TICKETDISPENSER_BASE": "Currently serving ticket #F102.",
+        "$CALLISTHESIS_TICKETDISPENSER_BASE_CHOICE_CHECK": "*Check my ticket*",
+        "$CALLISTHESIS_TICKETDISPENSER_BASE_CHOICE_GRAB": "*Grab a ticket*",
+        "$CALLISTHESIS_TICKETDISPENSER_BASE_CHOICE_GRABALL": "*GRAB ALL THE TICKETS*",
+        "$CALLISTHESIS_TICKETDISPENSER_EXIT": "We thank you for your patience.",
+        "$CALLISTHESIS_TICKETDISPENSER_TICKET1_GRAB": "Dispensed ticket #K594. Estimated waiting time 2h12min.",
+        "$CALLISTHESIS_TICKETDISPENSER_TICKET1_CHECK": "Your ticket is #K594. Estimated waiting time 2h12min.",
+        "$CALLISTHESIS_TICKETDISPENSER_TICKET2_GRAB": "Dispensed ticket #P771. Estimated waiting time 3h42min.",
+        "$CALLISTHESIS_TICKETDISPENSER_TICKET2_CHECK": "Your ticket is #P771. Estimated waiting time 3h42min.",
+        "$CALLISTHESIS_TICKETDISPENSER_TICKET3_GRAB": "Dispensed ticket #D401. Estimated waiting time 45min.",
+        "$CALLISTHESIS_TICKETDISPENSER_TICKET3_CHECK": "Your ticket is #D401. Estimated waiting time 45min.",
+        "$CALLISTHESIS_TICKETDISPENSER_TICKET4_GRAB": "Dispensed ticket #Z999. Estimated waiting time 3.6 billion years.",
+        "$CALLISTHESIS_TICKETDISPENSER_TICKET4_CHECK": "Your ticket is #Z999. Estimated waiting time 3.6 billion years.",
+        "$CALLISTHESIS_TICKETDISPENSER_TICKET5_GRAB": "Dispensed ticket #U816. Estimated waiting time 64 days.",
+        "$CALLISTHESIS_TICKETDISPENSER_TICKET5_CHECK": "Your ticket is #U816. Estimated waiting time 64 days.",
+        "$CALLISTHESIS_TICKETDISPENSER_GRABALL": "*Among the tickets, you find ticket #A103*",
+        "$CALLISTHESIS_TICKETDISPENSER_DEPLETED_1": "Currently serving ticket #A103.\\nWarning! This unit has ran out of paper and cannot dispense more tickets. Please notify the nearest employee for a paper refill.",
+        "$CALLISTHESIS_TICKETDISPENSER_DEPLETED_1_REPLY": "*Check my ticket*",
+        "$CALLISTHESIS_TICKETDISPENSER_DEPLETED_2": "Your ticket is #A103. You can proceed to the front desk.",
+        "$CALLISTHESIS_TICKETDISPENSER_DEPLETED_2_REPLY": "Finally.",
+        
+        // Aster (The goat rambles a lot)
+        "$CALLISTHESIS_ASTER_NAME": "Aster",
+        "$CALLISTHESIS_ASTER_DEFAULT": "Good morning dear.",
+        "$CALLISTHESIS_ASTER_DEFAULT_CHOICE_HI": "Good morning ma'am.",
+        "$CALLISTHESIS_ASTER_DEFAULT_CHOICE_CUTLINE": "I'm sorry ma'am but I'm in a hurry, could I get in front please?",
+        "$CALLISTHESIS_ASTER_DEFAULT_CHOICE_BUKRAD": "Excuse me ma'am, do you know anything about bukrads by any chance?",
+
+        "$CALLISTHESIS_ASTER_CUTLINE_1_1": "Excuse me? How utterly rude! This is no way to talk to an old lady!",
+        "$CALLISTHESIS_ASTER_CUTLINE_1_2": "Did not even say hello and they want to cut in line. Kids these days!",
+        "$CALLISTHESIS_ASTER_CUTLINE_1_3": "Back in my time we patiently waited in line like well-behaved nomai. We would even offer our place to our elders.",
+        "$CALLISTHESIS_ASTER_CUTLINE_1_4": "I remember one day when I was 6, this old gentleman entered the salad shop. Everyone stepped aside and let him order first. That's how polite we were back in the day. The old man didn't even have to pay, the staff was so polite.",
+        "$CALLISTHESIS_ASTER_CUTLINE_1_5": "The fact he was the owner had nothing to do with it, mind you.",
+        "$CALLISTHESIS_ASTER_CUTLINE_2_1": "Oh, how I used to love this salad restaurant. Was it the 'Salad Palace'? This old goat certainly spent a lot of days in there.",
+        "$CALLISTHESIS_ASTER_CUTLINE_2_2": "Their lettuce with cherry tomatoes was truly divine. To this day I wonder how they got their vegetables so ripe.",
+        "$CALLISTHESIS_ASTER_CUTLINE_2_3": "Was it homegrown, or did they have their special supplier? Youngsters take it for granted nowadays but fresh ingredients really do make a good meal.",
+        "$CALLISTHESIS_ASTER_CUTLINE_3_1": "I tried myself at gardening, you know?",
+        "$CALLISTHESIS_ASTER_CUTLINE_3_2": "I had my perfect patch of land behind my house. Just the right amount of sunshine for a happy plant. I also had acquired new overalls to fully immerse myself in gardening.",
+        "$CALLISTHESIS_ASTER_CUTLINE_3_3": "Ho-ho, boys would have fallen for how cute this little goat was in her gardening attire was. But alas, I had to focus on my plants.",
+        "$CALLISTHESIS_ASTER_CUTLINE_4_1": "I also read a lot to know how to do this properly. You probably should read more dear, you never know what knowledge you might be missing.",
+        "$CALLISTHESIS_ASTER_CUTLINE_4_2": "My eyes are not good anymore, but I still enjoy a good scroll to read before going to bed. Sometimes my dear Temu is kind enough to read it aloud for me, while I peacefully fall asleep.",
+        "$CALLISTHESIS_ASTER_CUTLINE_4_3": "You youngsters like to live your lives brash but one day you'll realize settling down can also be a blessing.",
+        "$CALLISTHESIS_ASTER_CUTLINE_CHOICE_LISTEN": "..",
+        "$CALLISTHESIS_ASTER_CUTLINE_CHOICE_LEAVE": "*Leave*",
+        "$CALLISTHESIS_ASTER_CUTLINE_CHOICE_SNOOZE": "*zzz*",
+        "$CALLISTHESIS_ASTER_CUTLINE_CHOICE_QUESTION": "So what are you here for, ma'am?",
+        "$CALLISTHESIS_ASTER_CUTLINE_5_1": "Oh, it's these archive handlers who wouldn't know their left from their right.\\nI have been told that some scrolls have suffered some corruption issues.",
+        "$CALLISTHESIS_ASTER_CUTLINE_5_2": "So now they've brought this old goat to try and fix it.\\nI have a lot of my work stored in here and I would not want it lost because of some luddite didn't know how to handle a scroll.",
+        "$CALLISTHESIS_ASTER_CUTLINE_5_3": "My old bones are not enjoying standing up for so long, I think I will go sit for a while.\\nThank you for holding me company, dear.",
+        "$CALLISTHESIS_ASTER_CUTLINE_5_REPLY": "No problem, ma'am.",
+        "$CALLISTHESIS_ASTER_CUTLINE_6": "Here, you can have my ticket since you were in a hurry.\\nI will grab another one once my legs are rested.",
+        "$CALLISTHESIS_ASTER_CUTLINE_6_REPLY": "Thank you, ma'am. Take care.",
+        
+        "$CALLISTHESIS_ASTER_BUKRAD_1": "Why of course, I am an expert of burkads.\\nThat is why I am here, I was summoned to repair a corrupted scroll and rewrite the missing data.",
+        "$CALLISTHESIS_ASTER_BUKRAD_1_REPLY": "Oh that's such a relief. I need to know how many legs the red-bellied horned bukrad has.",
+        "$CALLISTHESIS_ASTER_BUKRAD_2": "Ho-ho, what a peculiar request. Are you trying to pull a prank on this old lady, dear?",
+        "$CALLISTHESIS_ASTER_BUKRAD_2_REPLY": "No.. Why would you think that?",
+        "$CALLISTHESIS_ASTER_BUKRAD_3": "My dear, these bukrad are known among their cousins for being the only ones without legs.",
+        "$CALLISTHESIS_ASTER_BUKRAD_3_REPLY": "Oh. What? I mean, sure but- Okay then.",
+        "$CALLISTHESIS_ASTER_BUKRAD_4": "Is everything alright, dear?",
+        "$CALLISTHESIS_ASTER_BUKRAD_4_REPLY": "Y-yeah I just feel like I could have got to this point much sooner. Thank you ma'am.",
+        
+        // Frontdesk recorder
+        "$CALLISTHESIS_FRONTDESK_CHOICE_PRESS1": "*Press 1*",
+        "$CALLISTHESIS_FRONTDESK_CHOICE_PRESS2": "*Press 2*",
+        "$CALLISTHESIS_FRONTDESK_CHOICE_PRESS3": "*Press 3*",
+        "$CALLISTHESIS_FRONTDESK_CHOICE_PRESS4": "*Press 4*",
+        "$CALLISTHESIS_FRONTDESK_CHOICE_YES": "*Yes*",
+        "$CALLISTHESIS_FRONTDESK_CHOICE_NO": "*No*",
+        "$CALLISTHESIS_FRONTDESK_RETURNMENU": "Returning to this unit main menu.",
+        
+        "$CALLISTHESIS_FRONTDESK_DEFAULT_1_1": "This unit is an automated helper for the Nomai Archives.",
+        "$CALLISTHESIS_FRONTDESK_DEFAULT_1_2": "To add a scroll or tablet to our expanding archive, press 1.\\nTo consult an existing scroll or tablet, press 2.\\nTo conclude the interaction with this unit, press 3.\\nTo list your options once more, press 4.",
+
+        "$CALLISTHESIS_FRONTDESK_ADDEDIT_1": "We are currently experiencing severe data loss on upload.\\nAs such, all addition or edit to the archives must be supervised by a handler.",
+        "$CALLISTHESIS_FRONTDESK_ADDEDIT_2": "We apologize for the inconvenience and assure you this measure is to protect your legacies stored here.\\nWe advise that you wait for a handler to assist you.",
+
+        "$CALLISTHESIS_FRONTDESK_SEARCH_1": "You are looking for an existing scroll or tablet.",
+        "$CALLISTHESIS_FRONTDESK_SEARCH_2": "If you are looking for a specific author, press 1.\\nIf you want to search using a specific keyword, press 2.\\nTo return to this unit's main menu, press 3.\\nTo list your options once more, press 4.", 
+        "$CALLISTHESIS_FRONTDESK_AUTHOR": "Please enter the author name on the keypad.",
+        "$CALLISTHESIS_FRONTDESK_AUTHOR_CHOICE_CALLIS": "*C-a-l-l-i-s*",
+        "$CALLISTHESIS_FRONTDESK_AUTHOR_CHOICE_QUEUEINGNOMAI1": "*A-s-t-i-l-b-e*",
+        "$CALLISTHESIS_FRONTDESK_AUTHOR_CHOICE_QUEUEINGNOMAI2": "*A-l-l-i-u-m*",
+        "$CALLISTHESIS_FRONTDESK_AUTHOR_CHOICE_ASTER": "*A-s-t-e-r*",
+        "$CALLISTHESIS_FRONTDESK_AUTHOR_CHOICE_SOLANUM": "*S-o-l-a-n-u-m*",
+        "$CALLISTHESIS_FRONTDESK_KEYWORD": "Please type a keyword on the keypad.",
+        "$CALLISTHESIS_FRONTDESK_KEYWORD_CHOICE_BUKRAD": "*B-u-k-r-a-d*",
+        "$CALLISTHESIS_FRONTDESK_KEYWORD_CHOICE_THESIS": "*T-h-e-s-i-s*",
+        "$CALLISTHESIS_FRONTDESK_KEYWORD_CHOICE_SIGNAL": "*S-i-g-n-a-l*",
+        "$CALLISTHESIS_FRONTDESK_SIGNAL": "What type of [Signal] are you refering to? Please be more specific.",
+        "$CALLISTHESIS_FRONTDESK_SIGNAL_CHOICE_HAND": "*H-a-n-d-_-S-i-g-n-a-l*",
+        "$CALLISTHESIS_FRONTDESK_SIGNAL_CHOICE_MORSE": "*M-o-r-s-e-_-S-i-g-n-a-l*",
+        "$CALLISTHESIS_FRONTDESK_SIGNAL_CHOICE_ANTENNA": "*3-_-1-7-_-1-1-_-5-6-_-2*",
+        
+        "$CALLISTHESIS_FRONTDESK_SEARCHING_1": "Thank you. Searching database for entries..",
+        "$CALLISTHESIS_FRONTDESK_SEARCHING_2": "..",
+        "$CALLISTHESIS_FRONTDESK_SEARCHING_3": "..",
+        "$CALLISTHESIS_FRONTDESK_SEARCHING_CALLIS": "It appears this author elected to protect their entries with a password.\\nPlease enter the password for author [Callis].",
+        "$CALLISTHESIS_FRONTDESK_SEARCHING_NOTFOUND": "No scroll found under this author name.",
+        "$CALLISTHESIS_FRONTDESK_SEARCHING_RANDOM": "[22 entries] found in the database.\\nWould you like to download one of the entries onto a new scroll?",
+        "$CALLISTHESIS_FRONTDESK_SEARCHING_ASTER": "[68 entries] found in the database.\\nThis includes [1 entry] present in the rotating selection for public reading [4th-F5].\\nWould you like to download one of the entries onto a new scroll?",
+        "$CALLISTHESIS_FRONTDESK_SEARCHING_BUKRAD": "[345 entries] found in the database.\\nThis includes [5 entries] present in the rotating selection for public reading [1st-A2, 3rd-C2, 4th-B1, 4th-E3, 4th-F5].\\nWould you like to download one of the entries onto a new scroll?",
+        "$CALLISTHESIS_FRONTDESK_SEARCHING_THESIS": "The keyword [Thesis] has been marked as restricted, as it returns too many entries.\\nWe recommend that you search by author name, or by the content of their thesis.",
+        "$CALLISTHESIS_FRONTDESK_SEARCHING_HANDSIGNAL": "[32 entries] found in the database.\\nWould you like to download one of the entries onto a new scroll?",
+        "$CALLISTHESIS_FRONTDESK_SEARCHING_MORSESIGNAL": "The keyword [Thesis] has been marked as restricted, as it returns too many entries.\\nWe recommend that you search by author name, or by the content of their thesis.",
+        "$CALLISTHESIS_FRONTDESK_SEARCHING_ANTENNASIGNAL_1": "%[$++~@!",
+        "$CALLISTHESIS_FRONTDESK_SEARCHING_ANTENNASIGNAL_2": "<![CDATA[<color=lightblue>..</color>]]>",
+        "$CALLISTHESIS_FRONTDESK_SEARCHING_ANTENNASIGNAL_3": "<![CDATA[<color=lightblue>Good morning agent Hatchie. Central is glad you made it in one piece.</color>]]>\\n<![CDATA[<color=lightblue>Await further instructions on operation TLS.</color>]]>\\n<![CDATA[<color=lightblue>In the meantime, your assignment is to report on any strange activity on the neighboring planets.</color>]]>",
+        "$CALLISTHESIS_FRONTDESK_SEARCHING_ANTENNASIGNAL_4": "%[$++~@!",
+        "$CALLISTHESIS_FRONTDESK_SEARCHING_ANTENNASIGNAL_5": "No entry found.\\nReturning to this unit main menu.",
+        "$CALLISTHESIS_FRONTDESK_SEARCHEND": "Search cancelled.\\nReturning to this unit main menu.",
+        "$CALLISTHESIS_FRONTDESK_DOWNLOAD": "Starting download of the scroll..\\nEstimated download time.. [25 minutes]..\\nPlease take a seat, your scroll will be available soon.",
+        
+        "$CALLISTHESIS_FRONTDESK_PASSWORD_CHOICE_RANDOM1": "*1-1-1-1*",
+        "$CALLISTHESIS_FRONTDESK_PASSWORD_CHOICE_RANDOM2": "*1-2-3-4*",
+        "$CALLISTHESIS_FRONTDESK_PASSWORD_CHOICE_RANDOM3": "*P-A-S-S-W-O-R-D-1*",
+        "$CALLISTHESIS_FRONTDESK_PASSWORD_CHOICE_RANDOM4": "*slam head on keyboard*",
+        "$CALLISTHESIS_FRONTDESK_PASSWORD_CHOICE_FAKE1": "*1-0-3-1-7-1-1-5-6-2-6*", // Must match Log 'useless 2'
+        "$CALLISTHESIS_FRONTDESK_PASSWORD_CHOICE_FAKE2": "*1-0-3-1-7-1-1-5-6-2-2*", // Must match Log 'useless 4'
+        "$CALLISTHESIS_FRONTDESK_PASSWORD_CHOICE_FAKE3": "*1-0-3-1-7-1-1-5-6-2-4*", // Must match Log 'useless 1'
+        "$CALLISTHESIS_FRONTDESK_PASSWORD_CHOICE_FAKE4": "*1-0-3-1-7-1-1-5-6-2-5*", // Must match Log 'useless 5'
+        "$CALLISTHESIS_FRONTDESK_PASSWORD_CHOICE_CORRECT": "*1-0-3-1-7-1-1-5-6-2-0*",
+        "$CALLISTHESIS_FRONTDESK_VALIDPASSWORD": "Password valid. Welcome user [Callis].\\nWould you like to download a copy of your scroll?",
+        "$CALLISTHESIS_FRONTDESK_INVALIDPASSWORD": "Invalid password entered. Entries cannot be accessed, we apologize for the inconvenience.",
+        "$CALLISTHESIS_FRONTDESK_THESIS_1": "Starting download of the scroll..",
+        "$CALLISTHESIS_FRONTDESK_THESIS_2": "Your premium account has perks such as a much faster download speed, as well as no limit on the amount of downloads per day.\\nEstimated download time.. [2 minutes]..\\nPlease take a seat, your scroll will be available soon.",
+        "$CALLISTHESIS_FRONTDESK_THESIS_3": "Scroll downloaded. Thank you for using our services.",
+
+        // -- Walls --
+        "$CALLISTHESIS_TICKETDISPENSER_WRITING": "Ticket Dispenser",
+        "$CALLISTHESIS_BALCONY": "Open Reading Section. Be sure to have your membership card!",
+        "$CALLISTHESIS_FLOOR1": "1st Floor - Geography and Locations",
+        "$CALLISTHESIS_FLOOR2": "2nd Floor - Technology",
+        "$CALLISTHESIS_FLOOR3": "3rd Floor - Culture and People",
+        "$CALLISTHESIS_FLOOR4": "4th Floor - Biology",
+        "$CALLISTHESIS_FLOOR5": "5th Floor - History",
+        "$CALLISTHESIS_ROWA": "Row A",
+        "$CALLISTHESIS_ROWB": "Row B",
+        "$CALLISTHESIS_ROWC": "Row C",
+        "$CALLISTHESIS_ROWD": "Row D",
+        "$CALLISTHESIS_ROWE": "Row E",
+        "$CALLISTHESIS_ROWF": "Row F",
+
+        // -- Filler text --
+        "$CALLISTHESIS_SCROLL_1_01_1": "Ada: The Kadun Ministry handles all the bureacratic matters of the Kadun Kingdom.",
+        "$CALLISTHESIS_SCROLL_1_01_2": "Ada: Considering the Kadun people do not have a writing system and have to rely entirely on oral communication, this is also the loudest place of their planet.",
+        "$CALLISTHESIS_SCROLL_1_02_1": "Haben: With its impressive military arsenal, the Ostrav space station is the cornerstone of the Mest Dominion defenses.",
+        "$CALLISTHESIS_SCROLL_1_02_2": "Haben: It also doubles as a local stadium for the team 'Striped Vitoks'.",
+        "$CALLISTHESIS_SCROLL_1_03_1": "Blet: The Haryd system is a small uninhabited system in the Wede sector.",
+        "$CALLISTHESIS_SCROLL_1_03_2": "Blet: It consists of a red dwarf sun and two frozen planets devoid of any major feature.",
+        "$CALLISTHESIS_SCROLL_2_01_1": "Boryaceae: The Seca beam is a device used to convert light into music.",
+        "$CALLISTHESIS_SCROLL_2_01_2": "Boryaceae: it was developped conjointly by the Muno and Ariza species to faciliate communication.",
+        "$CALLISTHESIS_SCROLL_2_01_3": "Boryaceae: The Munos being a species of deaf shrimps.",
+        "$CALLISTHESIS_SCROLL_2_01_4": "Boryaceae: The Arizas being a species of blind reptiles communicating through harmonious reptilian belches.",
+        "$CALLISTHESIS_SCROLL_2_02_1": "Dorum: Yakan is the inventor of the Nomai Quantum Music Player. (NQMP or 'Enkyump')",
+        "$CALLISTHESIS_SCROLL_2_02_2": "Dorum: His idea was to elevate the music listening experience by switching the track played if the device detects the user is no longer paying attention.",
+        "$CALLISTHESIS_SCROLL_2_02_3": "Dorum: While praised for its quality, the Enkyump ended up a commercial failure, most users stating they prefered active control over their music.",
+        "$CALLISTHESIS_SCROLL_3_01_1": "Eria: Ravin Tewa is a writer and composer of the Ayod clan.",
+        "$CALLISTHESIS_SCROLL_3_01_2": "Eria: His famous hits include the love songs 'Rattu mine' and 'One night with Yada'.",
+        "$CALLISTHESIS_SCROLL_3_02_1": "Melior: The Uroru carnival is a yearly celebration among the Boli clan.",
+        "$CALLISTHESIS_SCROLL_3_02_2": "Melior: The legend says it started as a tribute of minerals towards their chemistry-oriented leader.",
+        "$CALLISTHESIS_SCROLL_3_02_3": "Melior: Nowadays the practice simply consists of jettisoning unwanted scrap metals through the airlock.",
+        "$CALLISTHESIS_SCROLL_4_01_1": "Tyrium: The Dorcad is a beetle loved by many Entomophiles.",
+        "$CALLISTHESIS_SCROLL_4_01_2": "Tyrium: Its shiny colors and gentle behavior makes it a pleasant pet.",
+
+        // -- Main text --
+        "$CALLISTHESIS_SCROLL_1_A2_1": "Laeliin: The Chapada Planetary Park is located in the Diamantine system.",
+        "$CALLISTHESIS_SCROLL_1_A2_2": "Laeliin: It encompasses the whole of Diamantine III, a planet of lush forests.",
+        "$CALLISTHESIS_SCROLL_1_A2_3": "Laeliin: As such, it is also home to a great number of species, such as the swift-tongue toad, the bald aligator, or the famous blue-bellied horned bukrad.",
+        "$CALLISTHESIS_SCROLL_1_A2_4": "Laeliin: The bald aligator shouldn't be mistaken for the shaved crocodile, which is a completely different species.",
+        "$CALLISTHESIS_SCROLL_1_A2_5": "Laeliin: The latter - as any respectable biologist would know - is a four-legged creature whose diet consist primarily of kelp.",
+
+        "$CALLISTHESIS_SCROLL_1_C5_1": "Phaius: Mammo is the capital planet of the Mancu Republic.",
+        "$CALLISTHESIS_SCROLL_1_C5_2": "Phaius: The Republic is currently lead by President Dern.",
+        "$CALLISTHESIS_SCROLL_1_C5_3": "Phaius: The city is also where the critically acclaimed Mammo cheese originates from.",
+        "$CALLISTHESIS_SCROLL_1_C5_4": "Phaius: Over 200 tons of cheese is produced annually.",
+        "$CALLISTHESIS_SCROLL_1_C5_5": "Phaius: The cheese is made from the milk of the red-bellied horned bukrood, a docile 6-legged mammal.",
+        
+        // (Yes this is the Bee movie script meme)
+        "$CALLISTHESIS_SCROLL_3_A3_1": "Luma: According to all known laws of aviation, there is no way a bee should be able to fly.",
+        "$CALLISTHESIS_SCROLL_3_A3_2": "Luma: Its wings are too small to get its fat little body off the ground.",
+        "$CALLISTHESIS_SCROLL_3_A3_3": "Luma: The bee, of course, flies anyway because bees don't care what humans think is impossible.",
+        "$CALLISTHESIS_SCROLL_3_A3_4": "Barry: Yellow, black.",
+        "$CALLISTHESIS_SCROLL_3_A3_5": "Barry: Yellow, black.",
+        "$CALLISTHESIS_SCROLL_3_A3_6": "Barry: Yellow, black.",
+        "$CALLISTHESIS_SCROLL_3_A3_7": "Barry: Yellow, black.",
+        "$CALLISTHESIS_SCROLL_3_A3_8": "Barry: Ooh, black and yellow!",
+        "$CALLISTHESIS_SCROLL_3_A3_9": "Janet: Barry! Breakfast is ready!",
+        "$CALLISTHESIS_SCROLL_3_A3_10": "Barry: Coming!",
+
+        "$CALLISTHESIS_SCROLL_3_C2_1": "Calytrix: The Tragan is a maroon colored bird first discovered by Cuvi of the Mela clan.",
+        "$CALLISTHESIS_SCROLL_3_C2_2": "Calytrix: The nocturnal animal preys on the red-bellied horned bukrad and other insects.",
+        "$CALLISTHESIS_SCROLL_3_C2_3": "Calytrix: Because of its tasty meat, it is a sought-after delicacy among the elite of the Temmin Concordate.",
+        
+        "$CALLISTHESIS_SCROLL_4_B1_1": "Stelis: The Helicon is a small lizard from the planet Dactyl, in the Col system.",
+        "$CALLISTHESIS_SCROLL_4_B1_2": "Stelis: It is currently on the list of endangered species, with only a few hundred individuals.",
+        "$CALLISTHESIS_SCROLL_4_B1_3": "Stelis: The main peril they face is a harsh climate due to the planet being titally locked.",
+        "$CALLISTHESIS_SCROLL_4_B1_4": "Stelis: The introduction of the bipedal red-tailed horned bukrad has put further pressure on the dwindling population.",
+
+        "$CALLISTHESIS_SCROLL_4_E2_1": "Baeck: The red-eyed horned bukrad, commonly known as the 'Tanis', was first discovered by biologist Kheye of the Lovic clan.",
+        "$CALLISTHESIS_SCROLL_4_E2_2": "Baeck: The large predator is at the apex of its habitat in the steppes of Korvo IV.",
+        "$CALLISTHESIS_SCROLL_4_E2_3": "Baeck: Its four main legs allowing it to pounce before a fifth smaller leg quickly snaps the neck of its prey.",
+        "$CALLISTHESIS_SCROLL_4_E2_4": "Baeck: Kheye ended up stranded on the planet for weeks after one Tanis attacked his shuttle.",
+        "$CALLISTHESIS_SCROLL_4_E2_5": "Baeck: Fortunately, Kheye was rescued and after relaying his finding, a strict ban was imposed on the planet.",
+
+        "$CALLISTHESIS_SCROLL_5_F5_1": "Oncid: Dols Nyon was a famous explorer born in 483E71 of the galatic calendar.",
+        "$CALLISTHESIS_SCROLL_5_F5_2": "Oncid: The collective of the Nomai clan is thankful for his many contributions to the archives.",
+        "$CALLISTHESIS_SCROLL_5_F5_3": "Oncid: Thanks to him, many new worlds were charted.",
+        "$CALLISTHESIS_SCROLL_5_F5_4": "Oncid: He would comment his favorite to be the giant gas planet Yank IV, which he would nickname 'Big Red Belly'.",
+        "$CALLISTHESIS_SCROLL_5_F5_5": "Oncid: The nickname comes from the striking red dot in the southern hemisphere, which is in fact a giant hurricane.",
+
+        "$CALLISTHESIS_SCROLL_BUKRAD_1": "Aster: The red bellied horned bukrad is one of the most ellusive insects ever discovered.",
+        "$CALLISTHESIS_SCROLL_BUKRAD_2": "Aster: It is a master at deception, blending in with its environment.",
+        "$CALLISTHESIS_SCROLL_BUKRAD_3": "Aster: I have s+.died these facinating cre$tures for y%ars and I am still amaz?[ by them.",
+        "$CALLISTHESIS_SCROLL_BUKRAD_4": "Aster: This scro^l contai[% all t+# inf\\.ma$ion I ha? g]th|§d <![CDATA[<Color=orange>]]>[File too corrupted to continue]<![CDATA[</Color>]]>",
+
+        "$CALLISTHESIS_SCROLL_CALLIS": "Callis: On the universality of marshmallows.",
+
+
+
+
+    },
+    "ShipLogDictionary": {
+        "$CALLISTHESIS_LOG_PLANET_NAME": "The Boiled Egg",
+        
+        // Planet
+        "$CALLISTHESIS_LOG_PLANET_RUMOR": "This planet ressembles a boiled egg, doesn't it?",
+        "$CALLISTHESIS_LOG_PLANET_FESTIVAL": "There is a festival booth around the equator, with Nomai gathered.",
+        "$CALLISTHESIS_LOG_PLANET_ARCHIVE": "There is a large building on the North pole.",
+            
+        // Festival
+        "$CALLISTHESIS_LOG_FESTIVAL_NAME": "Nomai Festival",
+        "$CALLISTHESIS_LOG_FESTIVAL_RUMOR": "There is a presentation booth here with Nomai gathered.",
+        "$CALLISTHESIS_LOG_FESTIVAL_EXPL": "There is a presentation booth here with Nomai gathered.",
+        "$CALLISTHESIS_LOG_FESTIVAL_EXPL_ALT": "There is a presentation booth where Nomai will present their discoveries to the others.",
+        "$CALLISTHESIS_LOG_FESTIVAL_CALLIS": "A Yound Nomai named Callis has requested my help.",
+        
+        // Archives
+        "$CALLISTHESIS_LOG_ARCHIVE_NAME": "Nomai Archives",
+        "$CALLISTHESIS_LOG_ARCHIVE_RUMOR_CALLIS": "Callis mentioned the archives are located on the North pole of the planet.",
+        "$CALLISTHESIS_LOG_ARCHIVE_RUMOR_EXPL": "There is a large building on the North pole.",
+        "$CALLISTHESIS_LOG_ARCHIVE_EXPL": "There is a large building on the North pole, where the Nomai archive their shared knowledge.",
+        "$CALLISTHESIS_LOG_ARCHIVE_TICKETS": "There is a queue of a few Nomai looking to access specific scrolls. The ticket dispenser is next to the wall.",
+        "$CALLISTHESIS_LOG_ARCHIVE_ANTENNA": "There is an antenna on the roof emitting a weak signal.",
+        "$CALLISTHESIS_LOG_ARCHIVE_PUBLICREADING": "There are some floors with scrolls open to public reading. I do need a membership card though.",
+        "$CALLISTHESIS_LOG_ARCHIVE_FLOOR1": "The first floor is centered around 'Geography and Locations'.",
+        "$CALLISTHESIS_LOG_ARCHIVE_FLOOR2": "The second floor is centered around 'Technology'.",
+        "$CALLISTHESIS_LOG_ARCHIVE_FLOOR3": "The third floor is centered around 'Culture and People'.",
+        "$CALLISTHESIS_LOG_ARCHIVE_FLOOR4": "The fourth floor is centered around 'Biology'.",
+        "$CALLISTHESIS_LOG_ARCHIVE_FLOOR5": "The fifth floor is centered around 'History'.",
+
+        // Thesis
+        "$CALLISTHESIS_LOG_THESIS_NAME": "Callis's Thesis",
+        "$CALLISTHESIS_LOG_THESIS_RUMOR": "I've agreed to find a copy of Callis's thesis.",
+        "$CALLISTHESIS_LOG_THESIS_INITIAL": "A forgetful Nomai named Callis lost her thesis scroll. I've agreed to get her a copy from the archives.",
+        "$CALLISTHESIS_LOG_THESIS_PASSWORD": "The scroll access is protected by a password.",
+        "$CALLISTHESIS_LOG_THESIS_PASSWORDCLUES": "Callis also forgot her password, but gave some clues as to what it might be.",
+        "$CALLISTHESIS_LOG_THESIS_DOWNLOADED": "I managed to download Callis's thesis onto a scroll. (Just in case, I also made a copy on my own ship computer to avoid going through all this again)",
+      
+        // Bukrad
+        "$CALLISTHESIS_LOG_BUKRAD_NAME": "Bukrad Facts",
+        "$CALLISTHESIS_LOG_BUKRAD_RUMOR": "I need to learn more about bukrads to assemble the password.",
+        "$CALLISTHESIS_LOG_BUKRAD_USELESS1": "A Nomai named <![CDATA[<color=grey>Laeliin</color>]]> states that the <![CDATA[<color=lightblue>blue</color>]]>-bellied horned bukrad has <![CDATA[<color=orange>four legs</color>]]>.",
+        "$CALLISTHESIS_LOG_BUKRAD_USELESS2": "A Nomai named <![CDATA[<color=grey>Phaius</color>]]> states that the red-bellied horned <![CDATA[<color=lightblue>bukrood</color>]]> has <![CDATA[<color=orange>six legs</color>]]>.",
+        "$CALLISTHESIS_LOG_BUKRAD_USELESS3": "A Nomai named <![CDATA[<color=grey>Calytrix</color>]]> states that the red-bellied horned bukrad is hunted by the Tragan.",
+        "$CALLISTHESIS_LOG_BUKRAD_USELESS4": "A Nomai named <![CDATA[<color=grey>Stelis</color>]]> states that the red-<![CDATA[<color=lightblue>tailed</color>]]> horned bukrad has <![CDATA[<color=orange>two legs</color>]]>.",
+        "$CALLISTHESIS_LOG_BUKRAD_USELESS5": "A Nomai named <![CDATA[<color=grey>Baeck</color>]]> states that the red-<![CDATA[<color=lightblue>eyed</color>]]> horned bukrad is a dangerous animal with <![CDATA[<color=orange>five legs</color>]]>.",
+        "$CALLISTHESIS_LOG_BUKRAD_USELESS6": "A Nomai named <![CDATA[<color=grey>Oncid</color>]]> states that the 'Big Red Belly' was Dols Nyon's favorite planet.",
+        "$CALLISTHESIS_LOG_BUKRAD_HINT": "A Nomai named <![CDATA[<color=grey>Aster</color>]]> states in a corrupted scroll that the red-bellied horned bukrad is a master of deception.",
+        "$CALLISTHESIS_LOG_BUKRAD_ANSWER": "I spoke with a Nomai named <![CDATA[<color=grey>Aster</color>]]>. She told me the red-bellied horned bukrad has, in fact, <![CDATA[<color=orange>no legs</color>]]>.",
+        
+        // Password
+        "$CALLISTHESIS_LOG_PASSWORD_NAME": "Callis's Password",
+        "$CALLISTHESIS_LOG_PASSWORD_RUMOR": "I need a password to access Callis's thesis scroll.",
+        "$CALLISTHESIS_LOG_PASSWORD_BASE": "I need a password to access Callis's thesis scroll.",
+        "$CALLISTHESIS_LOG_PASSWORD_CLUES": "Callis didn't have the password, but gave me clues on how to reconstruct it.",
+        
+        // Password - Part 1
+        "$CALLISTHESIS_LOG_PASSWORDPART1_NAME": "Part 1",
+        "$CALLISTHESIS_LOG_PASSWORDPART1_ANSWER": "Callis told me the first part of the password is the age she was when she first saw a festival, at 10 years old.",
+        
+        // Password - Part 2
+        "$CALLISTHESIS_LOG_PASSWORDPART2_NAME": "Part 2",
+        "$CALLISTHESIS_LOG_PASSWORDPART2_CLUE": "According to Callis, the second part of her password is the same as the archive broadcast signal.",
+        
+        // Password - Part 3
+        "$CALLISTHESIS_LOG_PASSWORDPART3_NAME": "Part 3",
+        "$CALLISTHESIS_LOG_PASSWORDPART3_CLUE": "For the third part of the password, I need to learn how many legs a red-bellied horned bukrad has.",
+    }
+  }

@@ -1,36 +1,31 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
-	<TextBlock>
-		<ID>1</ID>
+	<TextBlock><ID>1</ID>
 		<LocationA />
-		<Text>Phaius: Mammo is the capital planet of the Mancu Republic.</Text>
+		<Text>$CALLISTHESIS_SCROLL_1_C5_1</Text>
 	</TextBlock>
-	<TextBlock>
-		<ID>2</ID>
+	<TextBlock><ID>2</ID>
 		<ParentID>1</ParentID>
 		<LocationA />
-		<Text>Phaius: The Republic is currently lead by President Dern.</Text>
+		<Text>$CALLISTHESIS_SCROLL_1_C5_2</Text>
 	</TextBlock>
-	<TextBlock>
-		<ID>3</ID>
+	<TextBlock><ID>3</ID>
 		<ParentID>2</ParentID>
 		<LocationA />
-		<Text>Phaius: The city is also where the critically acclaimed Mammo cheese originates from.</Text>
+		<Text>$CALLISTHESIS_SCROLL_1_C5_3</Text>
 	</TextBlock>
-	<TextBlock>
-		<ID>4</ID>
+	<TextBlock><ID>4</ID>
 		<ParentID>3</ParentID>
 		<LocationB />
-		<Text>Phaius: Over 200 tons of cheese is produced annually.</Text>
+		<Text>$CALLISTHESIS_SCROLL_1_C5_4</Text>
 	</TextBlock>
-	<TextBlock>
-		<ID>5</ID>
+	<TextBlock><ID>5</ID>
 		<ParentID>3</ParentID>
 		<LocationB />
-		<Text>Phaius: The cheese is made from the milk of the red-bellied horned bukrood, a docile 6-legged mammal.</Text>
+		<Text>$CALLISTHESIS_SCROLL_1_C5_5</Text>
 	</TextBlock>
+
 	<ShipLogConditions>
-		<RevealFact>
-			<FactID>CALLISTHESIS_SHIPLOG_PASSWORD_PART_3_USELESS_2</FactID>
+		<RevealFact><FactID>CALLISTHESIS_SHIPLOG_PASSWORD_PART_3_USELESS_2</FactID>
 			<Condition>5</Condition>
 		</RevealFact>
 	</ShipLogConditions>

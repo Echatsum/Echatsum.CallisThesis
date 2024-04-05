@@ -1,53 +1,35 @@
 <DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
-	<NameField>Kania</NameField>
-
-	<!-- CONDITION/SHIPLOG
-		- CALLISTHESIS_SHIPLOG_FESTIVAL_EXPLORE_CALLIS;			Used in START_DEFAULT
-		- CALLISTHESIS_CONDITION_GUARD_REFUSAL;					Set in START_DEFAULT, Used in START_A
-
-		- CALLISTHESIS_CONDITION_FRONTDESK_LUNCHBREAK;			Used in START_B	
-	-->
+	<NameField>$CALLISTHESIS_FRONTDESKGUARD_NAME</NameField>
 
 	<!-- ENTRY NODES-->
-	<DialogueNode>
-		<Name>START_DEFAULT</Name>
+	<DialogueNode><Name>START_DEFAULT</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
-		<Dialogue>
-			<Page>Please wait in line for your turn.</Page>
-		</Dialogue>
+		<Dialogue><Page>$CALLISTHESIS_FRONTDESKGUARD_DEFAULT</Page></Dialogue>
 
 		<DialogueOptionsList>
 			<DialogueOption>
 				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_FESTIVAL_EXPLORE_CALLIS</RequiredLogCondition>
-				<Text>But this is urgent!</Text>
+				<Text>$CALLISTHESIS_FRONTDESKGUARD_DEFAULT_REPLY</Text>
 				<ConditionToSet>CALLISTHESIS_CONDITION_GUARD_REFUSAL</ConditionToSet>
 				<DialogueTarget>GUARD_REFUSAL</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
 	</DialogueNode>
 	
-	<DialogueNode>
-		<Name>START_A</Name>
+	<DialogueNode><Name>START_POSTREFUSAL</Name>
 		<EntryCondition>CALLISTHESIS_CONDITION_GUARD_REFUSAL</EntryCondition>
-		<Dialogue>
-			<Page>Please grab a ticket from the dispenser at the back and wait for your turn.</Page>
-		</Dialogue>
+		<Dialogue><Page>$CALLISTHESIS_FRONTDESKGUARD_POSTREFUSAL</Page></Dialogue>
 	</DialogueNode>
 
-	<DialogueNode>
-		<Name>START_B</Name>
+	<DialogueNode><Name>START_LUNCHBREAK</Name>
 		<EntryCondition>CALLISTHESIS_CONDITION_FRONTDESK_LUNCHBREAK</EntryCondition>
-		<Dialogue>
-			<Page>Our desk attendant is on lunch break, but you can use the automated helper.</Page>
-		</Dialogue>
+		<Dialogue><Page>$CALLISTHESIS_FRONTDESKGUARD_LUNCHBREAK</Page></Dialogue>
 	</DialogueNode>
 
 	<!-- OTHER NODES-->
-	<DialogueNode>
-		<Name>GUARD_REFUSAL</Name>
-		<Dialogue>
-			<Page>We are doing our best to accomodate for eveyone. Please grab a ticket from the dispenser at the back and wait for your turn.</Page>
-		</Dialogue>
+	<DialogueNode><Name>GUARD_REFUSAL</Name>
+		<Dialogue><Page>$CALLISTHESIS_FRONTDESKGUARD_REFUSAL</Page></Dialogue>
+		
 		<RevealFacts>
 			<FactID>CALLISTHESIS_SHIPLOG_ARCHIVE_TICKETS</FactID>
 		</RevealFacts>

@@ -1,14 +1,13 @@
 <DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
-	<NameField>Coryne</NameField>
+	<NameField>$CALLISTHESIS_NOMAIONCEILING_NAME</NameField>
 
 	<!-- ENTRY NODES-->
-	<DialogueNode>
-		<Name>START_DEFAULT</Name>
+	<DialogueNode><Name>START_DEFAULT</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
+		
 		<Dialogue>
-			<Page>Help..</Page>
-			<Page>The beam.. is too strong..</Page>
+			<Page>$CALLISTHESIS_NOMAIONCEILING_1</Page>
+			<Page>$CALLISTHESIS_NOMAIONCEILING_2</Page>
 		</Dialogue>
 	</DialogueNode>
-	
 </DialogueTree>

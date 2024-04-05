@@ -1,414 +1,369 @@
 <DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
 	<NameField>SIGN</NameField>
 
-	<!-- CONDITION/SHIPLOG
-		- CALLISTHESIS_CONDITION_GUARD_REFUSAL;					Set in START_DEFAULT, Used in START_A
-
-		- CALLISTHESIS_SHIPLOG_PASSWORD_FACT;					Used in SEARCH_AUTHOR_PASSWORD_FAIL
-		- CALLISTHESIS_SHIPLOG_PASSWORD_RUMOR_ARCHIVE_LINK;		Used in SEARCH_AUTHOR_PASSWORD_FAIL
-
-		- CALLISTHESIS_PASSWORD_PART_2_ANSWER;					Used in SEARCH_AUTHOR_2_1	
-		- CALLISTHESIS_PASSWORD_PART_3_ANSWER;					Used in SEARCH_AUTHOR_2_1	
-	-->
-
 	<!-- ENTRY NODES-->
-	<DialogueNode>
-		<Name>START_DEFAULT</Name>
+	<DialogueNode><Name>START_DEFAULT</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
+
 		<Dialogue>
-			<Page>This unit is an automated helper for the Nomai Archives.</Page>
-			<Page>To add a scroll or tablet to our expanding archive, press 1.\\nTo consult an existing scroll or tablet, press 2.\\nTo conclude the interaction with this unit, press 3.\\nTo list your options once more, press 4.</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_DEFAULT_1_1</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_DEFAULT_1_2</Page>
 		</Dialogue>
+
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>*Press 1*</Text>
-				<DialogueTarget>ADD_EDIT_1</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_CHOICE_PRESS1</Text>
+				<DialogueTarget>ADD_EDIT</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*Press 2*</Text>
-				<DialogueTarget>SEARCH_1</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_CHOICE_PRESS2</Text>
+				<DialogueTarget>SEARCH</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*Press 3*</Text>
+				<Text>$CALLISTHESIS_FRONTDESK_CHOICE_PRESS3</Text>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*Press 4*</Text>
+				<Text>$CALLISTHESIS_FRONTDESK_CHOICE_PRESS4</Text>
 				<DialogueTarget>START_DEFAULT</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
 	</DialogueNode>	
 
 	<!-- ADD_EDIT NODES-->
-	<DialogueNode>
-		<Name>ADD_EDIT_1</Name>
+	<DialogueNode><Name>ADD_EDIT</Name>
 		<Dialogue>
-			<Page>We are currently experiencing severe data loss on upload.\\nAs such, all addition or edit to the archives must be supervised by a handler.</Page>
-			<Page>We apologize for the inconvenience and assure you this measure is to protect your legacies stored here.\\nWe advise that you wait for a handler to assist you.</Page>
-			<Page>Returning to this unit main menu.</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_ADDEDIT_1</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_ADDEDIT_2</Page>
 		</Dialogue>
-		<DialogueTarget>START_DEFAULT</DialogueTarget>
+		<DialogueTarget>RETURN_MENU</DialogueTarget>
 	</DialogueNode>
 	
-
 	<!-- SEARCH NODES-->
-	<DialogueNode>
-		<Name>SEARCH_1</Name>
+	<DialogueNode><Name>SEARCH</Name>
 		<Dialogue>
-			<Page>You are looking for an existing scroll or tablet.</Page>
-			<Page>If you are looking for a specific author, press 1.\\nIf you want to search using a specific keyword, press 2.\\nTo return to this unit's main menu, press 3.\\nTo list your options once more, press 4.</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCH_1</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCH_2</Page>
 		</Dialogue>
+
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>*Press 1*</Text>
-				<DialogueTarget>SEARCH_AUTHOR_1</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_CHOICE_PRESS1</Text>
+				<DialogueTarget>SEARCH_AUTHOR</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*Press 2*</Text>
-				<DialogueTarget>SEARCH_KEYWORD_1</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_CHOICE_PRESS2</Text>
+				<DialogueTarget>SEARCH_KEYWORD</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*Press 3*</Text>
+				<Text>$CALLISTHESIS_FRONTDESK_CHOICE_PRESS3</Text>
 				<DialogueTarget>START_DEFAULT</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*Press 4*</Text>
-				<DialogueTarget>SEARCH_1</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_CHOICE_PRESS4</Text>
+				<DialogueTarget>SEARCH</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
 	</DialogueNode>
 	
-	<DialogueNode>
-		<Name>SEARCH_AUTHOR_1</Name>
-		<Dialogue>
-			<Page>Please enter the author name on the keypad.</Page>
-		</Dialogue>
+	<DialogueNode><Name>SEARCH_AUTHOR</Name>
+		<Dialogue><Page>$CALLISTHESIS_FRONTDESK_AUTHOR</Page></Dialogue>
+
 		<DialogueOptionsList>
 			<DialogueOption>
 				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_FESTIVAL_EXPLORE_CALLIS</RequiredLogCondition>
-				<Text>*C-a-l-l-i-s*</Text>
-				<DialogueTarget>SEARCH_AUTHOR_2_1</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_AUTHOR_CHOICE_CALLIS</Text>
+				<DialogueTarget>SEARCH_AUTHOR_CALLIS</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*A-s-t-i-l-b-e*</Text>
-				<DialogueTarget>SEARCH_AUTHOR_2_2</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_AUTHOR_CHOICE_QUEUEINGNOMAI1</Text>
+				<DialogueTarget>SEARCH_AUTHOR_NOTFOUND</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*A-l-l-i-u-m*</Text>
-				<DialogueTarget>SEARCH_AUTHOR_2_3</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_AUTHOR_CHOICE_QUEUEINGNOMAI2</Text>
+				<DialogueTarget>SEARCH_AUTHOR_RANDOM</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*A-s-t-e-r*</Text>
-				<DialogueTarget>SEARCH_AUTHOR_2_4</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_AUTHOR_CHOICE_ASTER</Text>
+				<DialogueTarget>SEARCH_AUTHOR_ASTER</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*S-o-l-a-n-u-m*</Text>
-				<DialogueTarget>SEARCH_AUTHOR_2_2</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_AUTHOR_CHOICE_SOLANUM</Text>
+				<DialogueTarget>SEARCH_AUTHOR_NOTFOUND</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
 	</DialogueNode>
 
-	<DialogueNode>
-		<Name>SEARCH_AUTHOR_2_1</Name>
+	<DialogueNode><Name>SEARCH_AUTHOR_CALLIS</Name>
 		<Dialogue>
-			<Page>Thank you. Searching database for entries..</Page>
-			<Page>..</Page>
-			<Page>..</Page>
-			<Page>It appears this author elected to protect their entries with a password.\\nPlease enter the password for author [Callis].</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_1</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_2</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_3</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_CALLIS</Page>
 		</Dialogue>
+
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>*1-1-1-1*</Text>
-				<DialogueTarget>SEARCH_AUTHOR_PASSWORD_FAIL</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_PASSWORD_CHOICE_RANDOM1</Text>
+				<DialogueTarget>PASSWORD_FAIL</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*1-2-3-4*</Text>
-				<DialogueTarget>SEARCH_AUTHOR_PASSWORD_FAIL</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_PASSWORD_CHOICE_RANDOM2</Text>
+				<DialogueTarget>PASSWORD_FAIL</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*P-A-S-S-W-O-R-D-1*</Text>
-				<DialogueTarget>SEARCH_AUTHOR_PASSWORD_FAIL</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_PASSWORD_CHOICE_RANDOM3</Text>
+				<DialogueTarget>PASSWORD_FAIL</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*slam head on keyboard*</Text>
-				<DialogueTarget>SEARCH_AUTHOR_PASSWORD_FAIL</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_PASSWORD_CHOICE_RANDOM4</Text>
+				<DialogueTarget>PASSWORD_FAIL</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
 				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_PASSWORD_CLUES</RequiredLogCondition>
 				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_ARCHIVE_SIGNAL</RequiredLogCondition>
 				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_PASSWORD_PART_3_USELESS_2</RequiredLogCondition>
-				<Text>*1-0-3-1-7-1-1-5-6-2-6*</Text>
-				<DialogueTarget>SEARCH_AUTHOR_PASSWORD_FAIL</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_PASSWORD_CHOICE_FAKE1</Text>
+				<DialogueTarget>PASSWORD_FAIL</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
 				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_PASSWORD_CLUES</RequiredLogCondition>
 				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_ARCHIVE_SIGNAL</RequiredLogCondition>
 				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_PASSWORD_PART_3_USELESS_4</RequiredLogCondition>
-				<Text>*1-0-3-1-7-1-1-5-6-2-2*</Text>
-				<DialogueTarget>SEARCH_AUTHOR_PASSWORD_FAIL</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_PASSWORD_CHOICE_FAKE2</Text>
+				<DialogueTarget>PASSWORD_FAIL</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
 				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_PASSWORD_CLUES</RequiredLogCondition>
 				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_ARCHIVE_SIGNAL</RequiredLogCondition>
 				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_PASSWORD_PART_3_USELESS_1</RequiredLogCondition>
-				<Text>*1-0-3-1-7-1-1-5-6-2-4*</Text>
-				<DialogueTarget>SEARCH_AUTHOR_PASSWORD_FAIL</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_PASSWORD_CHOICE_FAKE3</Text>
+				<DialogueTarget>PASSWORD_FAIL</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
 				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_PASSWORD_CLUES</RequiredLogCondition>
 				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_ARCHIVE_SIGNAL</RequiredLogCondition>
 				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_PASSWORD_PART_3_USELESS_5</RequiredLogCondition>
-				<Text>*1-0-3-1-7-1-1-5-6-2-5*</Text>
-				<DialogueTarget>SEARCH_AUTHOR_PASSWORD_FAIL</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_PASSWORD_CHOICE_FAKE4</Text>
+				<DialogueTarget>PASSWORD_FAIL</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
 				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_PASSWORD_CLUES</RequiredLogCondition>
 				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_ARCHIVE_SIGNAL</RequiredLogCondition>
 				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_PASSWORD_PART_3_ANSWER</RequiredLogCondition>
-				<Text>*1-0-3-1-7-1-1-5-6-2-0*</Text>
-				<DialogueTarget>SEARCH_AUTHOR_PASSWORD_SUCCESS</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_PASSWORD_CHOICE_CORRECT</Text>
+				<DialogueTarget>PASSWORD_SUCCESS</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
 	</DialogueNode>
 
-	<DialogueNode>
-		<Name>SEARCH_AUTHOR_PASSWORD_SUCCESS</Name>
-		<Dialogue>
-			<Page>Password valid. Welcome user [Callis].\\nWould you like to download a copy of your scroll?</Page>
-		</Dialogue>
+	<DialogueNode><Name>PASSWORD_SUCCESS</Name>
+		<Dialogue><Page>$CALLISTHESIS_FRONTDESK_VALIDPASSWORD</Page></Dialogue>
+		
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>*Yes*</Text>
-				<DialogueTarget>SEARCH_DOWNLOAD_THESIS_1</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_CHOICE_YES</Text>
+				<DialogueTarget>SEARCH_DOWNLOAD_THESIS</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*No*</Text>
+				<Text>$CALLISTHESIS_FRONTDESK_CHOICE_NO</Text>
 				<DialogueTarget>SEARCH_END</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
 	</DialogueNode>
 	
-	<DialogueNode>
-		<Name>SEARCH_AUTHOR_PASSWORD_FAIL</Name>
-		<Dialogue>
-			<Page>Invalid password entered. Entries cannot be accessed, we apologize for the inconvenience.</Page>
-			<Page>Returning to this unit main menu.</Page>
-		</Dialogue>
+	<DialogueNode><Name>PASSWORD_FAIL</Name>
+		<Dialogue><Page>$CALLISTHESIS_FRONTDESK_INVALIDPASSWORD</Page></Dialogue>
+		
 		<RevealFacts>
 			<FactID>CALLISTHESIS_SHIPLOG_PASSWORD_RUMOR_ARCHIVE_LINK</FactID>
 			<FactID>CALLISTHESIS_SHIPLOG_PASSWORD_FACT</FactID>
 		</RevealFacts>
-		<DialogueTarget>START_DEFAULT</DialogueTarget>
+		<DialogueTarget>RETURN_MENU</DialogueTarget>
 	</DialogueNode>
 	
-	<DialogueNode>
-		<Name>SEARCH_AUTHOR_2_2</Name>
+	<DialogueNode><Name>SEARCH_AUTHOR_NOTFOUND</Name>
 		<Dialogue>
-			<Page>Thank you. Searching database for entries..</Page>
-			<Page>..</Page>
-			<Page>..</Page>
-			<Page>No scroll found under this author name.</Page>
-			<Page>Returning to this unit main menu.</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_1</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_2</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_3</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_NOTFOUND</Page>
 		</Dialogue>
-		<DialogueTarget>START_DEFAULT</DialogueTarget>
+		<DialogueTarget>RETURN_MENU</DialogueTarget>
 	</DialogueNode>
 	
-	<DialogueNode>
-		<Name>SEARCH_AUTHOR_2_3</Name>
+	<DialogueNode><Name>SEARCH_AUTHOR_RANDOM</Name>
 		<Dialogue>
-			<Page>Thank you. Searching database for entries..</Page>
-			<Page>..</Page>
-			<Page>..</Page>
-			<Page>[22 entries] found in the database.\\nWould you like to download one of the entries onto a new scroll?</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_1</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_2</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_3</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_RANDOM</Page>
 		</Dialogue>
+
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>*Yes*</Text>
+				<Text>$CALLISTHESIS_FRONTDESK_CHOICE_YES</Text>
 				<DialogueTarget>SEARCH_DOWNLOAD</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*No*</Text>
+				<Text>$CALLISTHESIS_FRONTDESK_CHOICE_NO</Text>
 				<DialogueTarget>SEARCH_END</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
 	</DialogueNode>
 	
-	<DialogueNode>
-		<Name>SEARCH_AUTHOR_2_4</Name>
+	<DialogueNode><Name>SEARCH_AUTHOR_ASTER</Name>
 		<Dialogue>
-			<Page>Thank you. Searching database for entries..</Page>
-			<Page>..</Page>
-			<Page>..</Page>
-			<Page>[68 entries] found in the database.\\nThis includes [1 entry] present in the rotating selection for public reading [4F5].\\nWould you like to download one of the entries onto a new scroll?</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_1</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_2</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_3</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_ASTER</Page>
 		</Dialogue>
+
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>*Yes*</Text>
+				<Text>$CALLISTHESIS_FRONTDESK_CHOICE_YES</Text>
 				<DialogueTarget>SEARCH_DOWNLOAD</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*No*</Text>
+				<Text>$CALLISTHESIS_FRONTDESK_CHOICE_NO</Text>
 				<DialogueTarget>SEARCH_END</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
 	</DialogueNode>
 
-	
-	<DialogueNode>
-		<Name>SEARCH_KEYWORD_1</Name>
-		<Dialogue>
-			<Page>Please type a keyword on the keypad.</Page>
-		</Dialogue>
+	<DialogueNode><Name>SEARCH_KEYWORD</Name>
+		<Dialogue><Page>$CALLISTHESIS_FRONTDESK_KEYWORD</Page></Dialogue>
+		
 		<DialogueOptionsList>
 			<DialogueOption>
 				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_PASSWORD_PART_3_CLUE</RequiredLogCondition>
-				<Text>*B-u-k-r-a-d*</Text>
-				<DialogueTarget>SEARCH_KEYWORD_2_1</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_KEYWORD_CHOICE_BUKRAD</Text>
+				<DialogueTarget>SEARCH_KEYWORD_BUKRAD</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*T-h-e-s-i-s*</Text>
-				<DialogueTarget>SEARCH_KEYWORD_2_3</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_KEYWORD_CHOICE_THESIS</Text>
+				<DialogueTarget>SEARCH_KEYWORD_THESIS</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*S-i-g-n-a-l-s*</Text>
-				<DialogueTarget>SEARCH_KEYWORD_2_2</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_KEYWORD_CHOICE_SIGNAL</Text>
+				<DialogueTarget>SEARCH_KEYWORD_SIGNAL</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
 	</DialogueNode>
 
-	<DialogueNode>
-		<Name>SEARCH_KEYWORD_2_1</Name>
+	<DialogueNode><Name>SEARCH_KEYWORD_BUKRAD</Name>
 		<Dialogue>
-			<Page>Thank you. Searching database for entries..</Page>
-			<Page>..</Page>
-			<Page>[345 entries] found in the database.\\nThis includes [5 entries] present in the rotating selection for public reading [1A2, 3C2, 4B1, 4E3, 4F5].\\nWould you like to download one of the entries onto a new scroll?</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_1</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_2</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_BUKRAD</Page>
 		</Dialogue>
+
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>*Yes*</Text>
+				<Text>$CALLISTHESIS_FRONTDESK_CHOICE_YES</Text>
 				<DialogueTarget>SEARCH_DOWNLOAD</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*No*</Text>
+				<Text>$CALLISTHESIS_FRONTDESK_CHOICE_NO</Text>
 				<DialogueTarget>SEARCH_END</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
 	</DialogueNode>
 	
-	
-	<DialogueNode>
-		<Name>SEARCH_KEYWORD_2_2</Name>
-		<Dialogue>
-			<Page>What type of [Signal] are you refering to? please be more specific</Page>
-		</Dialogue>
+	<DialogueNode><Name>SEARCH_KEYWORD_THESIS</Name>
+		<Dialogue><Page>$CALLISTHESIS_FRONTDESK_SEARCHING_THESIS</Page></Dialogue>
+		<DialogueTarget>SEARCH</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode><Name>SEARCH_KEYWORD_SIGNAL</Name>
+		<Dialogue><Page>$CALLISTHESIS_FRONTDESK_SIGNAL</Page></Dialogue>
+
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>*H-a-n-d-_-S-i-g-n-a-l*</Text>
-				<DialogueTarget>SEARCH_KEYWORD_2_2_1</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_SIGNAL_CHOICE_HAND</Text>
+				<DialogueTarget>SEARCH_KEYWORD_HANDSIGNAL</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*M-o-r-s-e-_-S-i-g-n-a-l*</Text>
-				<DialogueTarget>SEARCH_KEYWORD_2_2_2</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_SIGNAL_CHOICE_MORSE</Text>
+				<DialogueTarget>SEARCH_KEYWORD_MORSESIGNAL</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
 				<RequiredLogCondition>CALLISTHESIS_SHIPLOG_ARCHIVE_SIGNAL</RequiredLogCondition>
-				<Text>*3-_-1-7-_-1-1-_-5-6-_-2*</Text>
-				<DialogueTarget>SEARCH_KEYWORD_2_2_3</DialogueTarget>
+				<Text>$CALLISTHESIS_FRONTDESK_SIGNAL_CHOICE_ANTENNA</Text>
+				<DialogueTarget>SEARCH_KEYWORD_ANTENNASIGNAL</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
+
 		<SetPersistentCondition>CALLISTHESIS_BUKRAD_SEARCH</SetPersistentCondition>
 	</DialogueNode>
 	
-	<DialogueNode>
-		<Name>SEARCH_KEYWORD_2_3</Name>
+	<DialogueNode><Name>SEARCH_KEYWORD_HANDSIGNAL</Name>
 		<Dialogue>
-			<Page>The keyword [Thesis] has been marked as restricted, as it returns too many entries.\\nWe recommend that you search by author name, or by the content of their thesis.</Page>
-		</Dialogue>
-		<DialogueTarget>SEARCH_1</DialogueTarget>
-	</DialogueNode>
-
-	<DialogueNode>
-		<Name>SEARCH_KEYWORD_2_2_1</Name>
-		<Dialogue>
-			<Page>Thank you. Searching database for entries..</Page>
-			<Page>..</Page>
-			<Page>[32 entries] found in the database.\\nWould you like to download one of the entries onto a new scroll?</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_1</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_2</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_HANDSIGNAL</Page>
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>*Yes*</Text>
+				<Text>$CALLISTHESIS_FRONTDESK_CHOICE_YES</Text>
 				<DialogueTarget>SEARCH_DOWNLOAD</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*No*</Text>
+				<Text>$CALLISTHESIS_FRONTDESK_CHOICE_NO</Text>
 				<DialogueTarget>SEARCH_END</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
 	</DialogueNode>
 
-	<DialogueNode>
-		<Name>SEARCH_KEYWORD_2_2_2</Name>
+	<DialogueNode><Name>SEARCH_KEYWORD_MORSESIGNAL</Name>
 		<Dialogue>
-			<Page>Thank you. Searching database for entries..</Page>
-			<Page>..</Page>
-			<Page>[77 entries] found in the database.\\nWould you like to download one of the entries onto a new scroll?</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_1</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_2</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_MORSESIGNAL</Page>
 		</Dialogue>
+
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>*Yes*</Text>
+				<Text>$CALLISTHESIS_FRONTDESK_CHOICE_YES</Text>
 				<DialogueTarget>SEARCH_DOWNLOAD</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*No*</Text>
+				<Text>$CALLISTHESIS_FRONTDESK_CHOICE_NO</Text>
 				<DialogueTarget>SEARCH_END</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
 	</DialogueNode>
 	
-	<DialogueNode>
-		<Name>SEARCH_KEYWORD_2_2_3</Name>
+	<DialogueNode><Name>SEARCH_KEYWORD_ANTENNASIGNAL</Name>
 		<Dialogue>
-			<Page>%[$++~@!</Page>
-			<Page><![CDATA[<color=lightblue>..</color>]]></Page>
-			<Page><![CDATA[<color=lightblue>Good morning agent Hatchie. Central is glad you made it in one piece.</color>]]>\\n<![CDATA[<color=lightblue>Await further instructions on operation TLS.</color>]]>\\n<![CDATA[<color=lightblue>In the meantime, your assignment is to report on any strange activity on the neighboring planets.</color>]]></Page>
-			<Page>%[$++~@!</Page>
-			<Page>No entry found.\\nReturning to this unit main menu.</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_ANTENNASIGNAL_1</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_ANTENNASIGNAL_2</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_ANTENNASIGNAL_3</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_ANTENNASIGNAL_4</Page>
+			<Page>$CALLISTHESIS_FRONTDESK_SEARCHING_ANTENNASIGNAL_5</Page>
 		</Dialogue>
 		<DialogueTarget>START_DEFAULT</DialogueTarget>
 	</DialogueNode>
 
+	<DialogueNode><Name>SEARCH_DOWNLOAD</Name>
+		<Dialogue><Page>$CALLISTHESIS_FRONTDESK_DOWNLOAD</Page></Dialogue>
+		<DialogueTarget>RETURN_MENU</DialogueTarget>
+	</DialogueNode>
+	
+	<DialogueNode><Name>SEARCH_END</Name>
+		<Dialogue><Page>$CALLISTHESIS_FRONTDESK_SEARCHEND</Page></Dialogue>
+		<DialogueTarget>START_DEFAULT</DialogueTarget>
+	</DialogueNode>
 
-	<DialogueNode>
-		<Name>SEARCH_DOWNLOAD</Name>
-		<Dialogue>
-			<Page>Starting download of the scroll..\\nEstimated download time.. [25 minutes]..\\nPlease take a seat, your scroll will be available soon.</Page>
-			<Page>Returning to this unit main menu.</Page>
-		</Dialogue>
+	<DialogueNode><Name>RETURN_MENU</Name>
+		<Dialogue><Page>$CALLISTHESIS_FRONTDESK_RETURNMENU</Page></Dialogue>
 		<DialogueTarget>START_DEFAULT</DialogueTarget>
 	</DialogueNode>
 	
-	<DialogueNode>
-		<Name>SEARCH_END</Name>
-		<Dialogue>
-			<Page>Search cancelled.\\nReturning to this unit main menu.</Page>
-		</Dialogue>
-		<DialogueTarget>START_DEFAULT</DialogueTarget>
-	</DialogueNode>
-
-	
-	<DialogueNode>
-		<Name>SEARCH_DOWNLOAD_THESIS_1</Name>
-		<Dialogue>
-			<Page>Starting download of the scroll..</Page>
-			<Page>Your premium account has perks such as a much faster download speed, as well as no limit on the amount of downloads per day.\\nEstimated download time.. [2 minutes]..\\nPlease take a seat, your scroll will be available soon.</Page>
-		</Dialogue>
-		<DialogueTarget>SEARCH_DOWNLOAD_THESIS_2</DialogueTarget>
-	</DialogueNode>
-
-	<DialogueNode>
-		<Name>SEARCH_DOWNLOAD_THESIS_2</Name>
-		<Dialogue>
-			<Page>Scroll downloaded. Thank you for using our services.</Page>
-		</Dialogue>
+	<DialogueNode><Name>SEARCH_DOWNLOAD_THESIS</Name>
+		<Dialogue><Page>$CALLISTHESIS_FRONTDESK_THESIS_1</Page></Dialogue>
+		<Dialogue><Page>$CALLISTHESIS_FRONTDESK_THESIS_2</Page></Dialogue>
+		<Dialogue><Page>$CALLISTHESIS_FRONTDESK_THESIS_3</Page></Dialogue>
 
 		<RevealFacts>
 			<FactID>CALLISTHESIS_SHIPLOG_THESIS_DOWNLOADED</FactID>

@@ -1,266 +1,172 @@
 <DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
 	<NameField>SIGN</NameField>
 
-	<!-- CONDITION/SHIPLOG
-		- CALLISTHESIS_CONDITION_TICKET_01;						Set in START_DEFAULT, Used in START_TICKET_01
-		- CALLISTHESIS_CONDITION_TICKET_02;						Set in START_TICKET_01, Used in START_TICKET_02
-		- CALLISTHESIS_CONDITION_TICKET_03;						Set in START_TICKET_02, Used in START_TICKET_03
-		- CALLISTHESIS_CONDITION_TICKET_04;						Set in START_TICKET_03, Used in START_TICKET_04
-		- CALLISTHESIS_CONDITION_TICKET_05;						Set in START_TICKET_04, Used in START_TICKET_05
-		- CALLISTHESIS_CONDITION_TICKET_ALL;					Set in START_TICKET_05
-
-		- CALLISTHESIS_CONDITION_FRONTDESK_LUNCHBREAK;			Set in END_DEPLETED_TICKETS_2
-	-->
-
 	<!-- ENTRY NODES-->
-	<DialogueNode>
-		<Name>START_DEFAULT</Name>
+	<DialogueNode><Name>START_DEFAULT</Name>
 		<EntryCondition>DEFAULT</EntryCondition>
-		<Dialogue>
-			<Page>Currently serving ticket #F102</Page>
-		</Dialogue>
+
+		<Dialogue><Page>$CALLISTHESIS_TICKETDISPENSER_BASE</Page></Dialogue>
 
 		<DialogueOptionsList>
+			<!-- Default (No ticket held) -->
 			<DialogueOption>
-				<Text>*Grab a ticket*</Text>
+				<CancelledCondition>CALLISTHESIS_CONDITION_TICKET_01</CancelledCondition>
+				<Text>$CALLISTHESIS_TICKETDISPENSER_BASE_CHOICE_GRAB</Text>
 				<ConditionToSet>CALLISTHESIS_CONDITION_TICKET_01</ConditionToSet>
-				<DialogueTarget>TICKET_GRAB_NONE</DialogueTarget>
+				<DialogueTarget>TICKET1_GRAB</DialogueTarget>
 			</DialogueOption>
-		</DialogueOptionsList>
-	</DialogueNode>
 
-	<DialogueNode>
-		<Name>START_TICKET_01</Name>
-		<EntryCondition>CALLISTHESIS_CONDITION_TICKET_01</EntryCondition>
-		<Dialogue>
-			<Page>Currently serving ticket #F102</Page>
-		</Dialogue>
-
-		<DialogueOptionsList>
+			<!-- Ticket 1 -->
 			<DialogueOption>
-				<Text>*Check my ticket*</Text>
-				<DialogueTarget>TICKET_CHECK_01</DialogueTarget>
+				<RequiredCondition>CALLISTHESIS_CONDITION_TICKET_01</RequiredCondition>
+				<CancelledCondition>CALLISTHESIS_CONDITION_TICKET_02</CancelledCondition>
+				<Text>$CALLISTHESIS_TICKETDISPENSER_BASE_CHOICE_CHECK</Text>
+				<DialogueTarget>TICKET1_CHECK</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*Grab a ticket*</Text>
+				<RequiredCondition>CALLISTHESIS_CONDITION_TICKET_01</RequiredCondition>
+				<CancelledCondition>CALLISTHESIS_CONDITION_TICKET_02</CancelledCondition>
+				<Text>$CALLISTHESIS_TICKETDISPENSER_BASE_CHOICE_GRAB</Text>
 				<ConditionToSet>CALLISTHESIS_CONDITION_TICKET_02</ConditionToSet>
-				<ConditionToCancel>CALLISTHESIS_CONDITION_TICKET_01</ConditionToCancel>
-				<DialogueTarget>TICKET_GRAB_01</DialogueTarget>
+				<DialogueTarget>TICKET2_GRAB</DialogueTarget>
 			</DialogueOption>
-		</DialogueOptionsList>
-	</DialogueNode>
 
-	<DialogueNode>
-		<Name>START_TICKET_02</Name>
-		<EntryCondition>CALLISTHESIS_CONDITION_TICKET_02</EntryCondition>
-		<Dialogue>
-			<Page>Currently serving ticket #F102</Page>
-		</Dialogue>
-
-		<DialogueOptionsList>
+			<!-- Ticket 2 -->
 			<DialogueOption>
-				<Text>*Check my ticket*</Text>
-				<DialogueTarget>TICKET_CHECK_02</DialogueTarget>
+				<RequiredCondition>CALLISTHESIS_CONDITION_TICKET_02</RequiredCondition>
+				<CancelledCondition>CALLISTHESIS_CONDITION_TICKET_03</CancelledCondition>
+				<Text>$CALLISTHESIS_TICKETDISPENSER_BASE_CHOICE_CHECK</Text>
+				<DialogueTarget>TICKET2_CHECK</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*Grab a ticket*</Text>
+				<RequiredCondition>CALLISTHESIS_CONDITION_TICKET_02</RequiredCondition>
+				<CancelledCondition>CALLISTHESIS_CONDITION_TICKET_03</CancelledCondition>
+				<Text>$CALLISTHESIS_TICKETDISPENSER_BASE_CHOICE_GRAB</Text>
 				<ConditionToSet>CALLISTHESIS_CONDITION_TICKET_03</ConditionToSet>
-				<ConditionToCancel>CALLISTHESIS_CONDITION_TICKET_02</ConditionToCancel>
-				<DialogueTarget>TICKET_GRAB_02</DialogueTarget>
+				<DialogueTarget>TICKET3_GRAB</DialogueTarget>
 			</DialogueOption>
-		</DialogueOptionsList>
-	</DialogueNode>
 
-	<DialogueNode>
-		<Name>START_TICKET_03</Name>
-		<EntryCondition>CALLISTHESIS_CONDITION_TICKET_03</EntryCondition>
-		<Dialogue>
-			<Page>Currently serving ticket #F102</Page>
-		</Dialogue>
-
-		<DialogueOptionsList>
+			<!-- Ticket 3 -->
 			<DialogueOption>
-				<Text>*Check my ticket*</Text>
-				<DialogueTarget>TICKET_CHECK_03</DialogueTarget>
+				<RequiredCondition>CALLISTHESIS_CONDITION_TICKET_03</RequiredCondition>
+				<CancelledCondition>CALLISTHESIS_CONDITION_TICKET_04</CancelledCondition>
+				<Text>$CALLISTHESIS_TICKETDISPENSER_BASE_CHOICE_CHECK</Text>
+				<DialogueTarget>TICKET3_CHECK</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*Grab a ticket*</Text>
+				<RequiredCondition>CALLISTHESIS_CONDITION_TICKET_03</RequiredCondition>
+				<CancelledCondition>CALLISTHESIS_CONDITION_TICKET_04</CancelledCondition>
+				<Text>$CALLISTHESIS_TICKETDISPENSER_BASE_CHOICE_GRAB</Text>
 				<ConditionToSet>CALLISTHESIS_CONDITION_TICKET_04</ConditionToSet>
-				<ConditionToCancel>CALLISTHESIS_CONDITION_TICKET_03</ConditionToCancel>
-				<DialogueTarget>TICKET_GRAB_03</DialogueTarget>
+				<DialogueTarget>TICKET4_GRAB</DialogueTarget>
 			</DialogueOption>
-		</DialogueOptionsList>
-	</DialogueNode>
 
-	<DialogueNode>
-		<Name>START_TICKET_04</Name>
-		<EntryCondition>CALLISTHESIS_CONDITION_TICKET_04</EntryCondition>
-		<Dialogue>
-			<Page>Currently serving ticket #F102</Page>
-		</Dialogue>
-
-		<DialogueOptionsList>
+			<!-- Ticket 4 -->
 			<DialogueOption>
-				<Text>*Check my ticket*</Text>
-				<DialogueTarget>TICKET_CHECK_04</DialogueTarget>
+				<RequiredCondition>CALLISTHESIS_CONDITION_TICKET_04</RequiredCondition>
+				<CancelledCondition>CALLISTHESIS_CONDITION_TICKET_05</CancelledCondition>
+				<Text>$CALLISTHESIS_TICKETDISPENSER_BASE_CHOICE_CHECK</Text>
+				<DialogueTarget>TICKET4_CHECK</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*Grab a ticket*</Text>
+				<RequiredCondition>CALLISTHESIS_CONDITION_TICKET_04</RequiredCondition>
+				<CancelledCondition>CALLISTHESIS_CONDITION_TICKET_05</CancelledCondition>
+				<Text>$CALLISTHESIS_TICKETDISPENSER_BASE_CHOICE_GRAB</Text>
 				<ConditionToSet>CALLISTHESIS_CONDITION_TICKET_05</ConditionToSet>
-				<ConditionToCancel>CALLISTHESIS_CONDITION_TICKET_04</ConditionToCancel>
-				<DialogueTarget>TICKET_GRAB_04</DialogueTarget>
+				<DialogueTarget>TICKET5_GRAB</DialogueTarget>
 			</DialogueOption>
-		</DialogueOptionsList>
-	</DialogueNode>
 
-	<DialogueNode>
-		<Name>START_TICKET_05</Name>
-		<EntryCondition>CALLISTHESIS_CONDITION_TICKET_05</EntryCondition>
-		<Dialogue>
-			<Page>Currently serving ticket #F102</Page>
-		</Dialogue>
-
-		<DialogueOptionsList>
+			<!-- Ticket 5 -->
 			<DialogueOption>
-				<Text>*Check my ticket*</Text>
-				<DialogueTarget>TICKET_CHECK_05</DialogueTarget>
+				<RequiredCondition>CALLISTHESIS_CONDITION_TICKET_05</RequiredCondition>
+				<Text>$CALLISTHESIS_TICKETDISPENSER_BASE_CHOICE_CHECK</Text>
+				<DialogueTarget>TICKET5_CHECK</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
-				<Text>*GRAB ALL THE TICKETS*</Text>
-				<ConditionToSet>CALLISTHESIS_CONDITION_TICKET_ALL</ConditionToSet> <!-- Probably useless now -->
-				<ConditionToCancel>CALLISTHESIS_CONDITION_TICKET_05</ConditionToCancel>
+				<RequiredCondition>CALLISTHESIS_CONDITION_TICKET_05</RequiredCondition>
+				<Text>$CALLISTHESIS_TICKETDISPENSER_BASE_CHOICE_GRAB</Text>
 				<DialogueTarget>TICKET_GRAB_ALL</DialogueTarget>
 			</DialogueOption>
 		</DialogueOptionsList>
 	</DialogueNode>
 
-
 	<!-- TICKET_GRAB/TICKET_CHECK NODES-->
 
-	<!-- TICKET_01: K594, 2h12min-->
-	<DialogueNode>
-		<Name>TICKET_GRAB_NONE</Name>
-		<Dialogue>
-			<Page>Dispensed ticket #K594. Estimated waiting time 2h12min.</Page>
-		</Dialogue>
+	<!-- TICKET_01 -->
+	<DialogueNode><Name>TICKET1_GRAB</Name>
+		<Dialogue><Page>$CALLISTHESIS_TICKETDISPENSER_TICKET1_GRAB</Page></Dialogue>
 		<DialogueTarget>EXIT</DialogueTarget>
 	</DialogueNode>
-	<DialogueNode>
-		<Name>TICKET_CHECK_01</Name>
-		<Dialogue>
-			<Page>Your ticket is #K594. Estimated waiting time 2h12min.</Page>
-		</Dialogue>
+	<DialogueNode><Name>TICKET1_CHECK</Name>
+		<Dialogue><Page>$CALLISTHESIS_TICKETDISPENSER_TICKET1_CHECK</Page></Dialogue>
 		<DialogueTarget>EXIT</DialogueTarget>
 	</DialogueNode>
 	
-	<!-- TICKET_02: P771, 3h42min-->
-	<DialogueNode>
-		<Name>TICKET_GRAB_01</Name>
-		<Dialogue>
-			<Page>Dispensed ticket #P771. Estimated waiting time 3h42min.</Page>
-		</Dialogue>
+	<!-- TICKET_02 -->
+	<DialogueNode><Name>TICKET2_GRAB</Name>
+		<Dialogue><Page>$CALLISTHESIS_TICKETDISPENSER_TICKET2_GRAB</Page></Dialogue>
 		<DialogueTarget>EXIT</DialogueTarget>
 	</DialogueNode>
-	<DialogueNode>
-		<Name>TICKET_CHECK_02</Name>
-		<Dialogue>
-			<Page>Your ticket is #P771. Estimated waiting time 3h42min.</Page>
-		</Dialogue>
+	<DialogueNode><Name>TICKET2_CHECK</Name>
+		<Dialogue><Page>$CALLISTHESIS_TICKETDISPENSER_TICKET2_CHECK</Page></Dialogue>
 		<DialogueTarget>EXIT</DialogueTarget>
 	</DialogueNode>
 	
-	<!-- TICKET_03: D401, 45min-->
-	<DialogueNode>
-		<Name>TICKET_GRAB_02</Name>
-		<Dialogue>
-			<Page>Dispensed ticket #D401. Estimated waiting time 45min.</Page>
-		</Dialogue>
+	<!-- TICKET_03 -->
+	<DialogueNode><Name>TICKET3_GRAB</Name>
+		<Dialogue><Page>$CALLISTHESIS_TICKETDISPENSER_TICKET3_GRAB</Page></Dialogue>
 		<DialogueTarget>EXIT</DialogueTarget>
 	</DialogueNode>
-	<DialogueNode>
-		<Name>TICKET_CHECK_03</Name>
-		<Dialogue>
-			<Page>Your ticket is #D401. Estimated waiting time 45min.</Page>
-		</Dialogue>
+	<DialogueNode><Name>TICKET3_CHECK</Name>
+		<Dialogue><Page>$CALLISTHESIS_TICKETDISPENSER_TICKET3_CHECK</Page></Dialogue>
 		<DialogueTarget>EXIT</DialogueTarget>
 	</DialogueNode>
 	
-	<!-- TICKET_04: Z999, 3.6 billion years-->
-	<DialogueNode>
-		<Name>TICKET_GRAB_03</Name>
-		<Dialogue>
-			<Page>Dispensed ticket #Z999. Estimated waiting time 3.6 billion years.</Page>
-		</Dialogue>
+	<!-- TICKET_04 -->
+	<DialogueNode><Name>TICKET4_GRAB</Name>
+		<Dialogue><Page>$CALLISTHESIS_TICKETDISPENSER_TICKET4_GRAB</Page></Dialogue>
 		<DialogueTarget>EXIT</DialogueTarget>
 	</DialogueNode>
-	<DialogueNode>
-		<Name>TICKET_CHECK_04</Name>
-		<Dialogue>
-			<Page>Your ticket is #Z999. Estimated waiting time 3.6 billion years.</Page>
-		</Dialogue>
+	<DialogueNode><Name>TICKET4_CHECK</Name>
+		<Dialogue><Page>$CALLISTHESIS_TICKETDISPENSER_TICKET4_CHECK</Page></Dialogue>
 		<DialogueTarget>EXIT</DialogueTarget>
 	</DialogueNode>
 	
-	<!-- TICKET_05: U816, 64 days-->
-	<DialogueNode>
-		<Name>TICKET_GRAB_04</Name>
-		<Dialogue>
-			<Page>Dispensed ticket #U816. Estimated waiting time 64 days.</Page>
-		</Dialogue>
+	<!-- TICKET_05 -->
+	<DialogueNode><Name>TICKET5_GRAB</Name>
+		<Dialogue><Page>$CALLISTHESIS_TICKETDISPENSER_TICKET5_GRAB</Page></Dialogue>
 		<DialogueTarget>EXIT</DialogueTarget>
 	</DialogueNode>
-	<DialogueNode>
-		<Name>TICKET_CHECK_05</Name>
-		<Dialogue>
-			<Page>Your ticket is #U816. Estimated waiting time 64 days.</Page>
-		</Dialogue>
+	<DialogueNode><Name>TICKET5_CHECK</Name>
+		<Dialogue><Page>$CALLISTHESIS_TICKETDISPENSER_TICKET5_CHECK</Page></Dialogue>
 		<DialogueTarget>EXIT</DialogueTarget>
 	</DialogueNode>
 
-	<!-- TICKET_ALL: A103, 1min-->
-	<DialogueNode>
-		<Name>TICKET_GRAB_ALL</Name>
-		<Dialogue>
-			<Page>*Among the tickets, you find ticket #A103*</Page>
-		</Dialogue>
-		<DialogueTarget>END_DEPLETED_TICKETS_1</DialogueTarget>
+	<!-- TICKET_ALL -->
+	<DialogueNode><Name>TICKET_GRAB_ALL</Name>
+		<Dialogue><Page>$CALLISTHESIS_TICKETDISPENSER_GRABALL</Page></Dialogue>
+		<DialogueTarget>DEPLETED_1</DialogueTarget>
 	</DialogueNode>
-
-
 
 	<!-- EXIT NODES-->
-	<DialogueNode>
-		<Name>EXIT</Name>
-		<Dialogue>
-			<Page>We thank you for your patience.</Page>
-		</Dialogue>
+	<DialogueNode><Name>EXIT</Name>
+		<Dialogue><Page>$CALLISTHESIS_TICKETDISPENSER_EXIT</Page></Dialogue>
 	</DialogueNode>
 	
-	<DialogueNode>
-		<Name>END_DEPLETED_TICKETS_1</Name>
-		<Dialogue>
-			<Page>Currently serving ticket #A103.\\nWarning! This unit has ran out of paper and cannot dispense more tickets. Please notify the nearest employee for a paper refill.</Page>
-		</Dialogue>
-		
-		<DialogueOptionsList>
-			<DialogueOption>
-				<Text>*Check my ticket*</Text>
-				<DialogueTarget>END_DEPLETED_TICKETS_2</DialogueTarget>
-			</DialogueOption>
-		</DialogueOptionsList>
+	<DialogueNode><Name>DEPLETED_1</Name>
+		<Dialogue><Page>$CALLISTHESIS_TICKETDISPENSER_DEPLETED_1</Page></Dialogue>
+		<DialogueOptionsList><DialogueOption>
+			<Text>$CALLISTHESIS_TICKETDISPENSER_DEPLETED_1_REPLY</Text>
+			<DialogueTarget>DEPLETED_2</DialogueTarget>
+		</DialogueOption></DialogueOptionsList>
 	</DialogueNode>
 
-	<DialogueNode>
-		<Name>END_DEPLETED_TICKETS_2</Name>
-		<Dialogue>
-			<Page>Your ticket is #A103. You can proceed to the front desk.</Page>
-		</Dialogue>
-		<DialogueOptionsList>
-			<DialogueOption>
-				<Text>Finally.</Text>
-				<ConditionToSet>CALLISTHESIS_CONDITION_FRONTDESK_LUNCHBREAK</ConditionToSet>
-			</DialogueOption>
-		</DialogueOptionsList>
+	<DialogueNode><Name>DEPLETED_2</Name>
+		<Dialogue><Page>$CALLISTHESIS_TICKETDISPENSER_DEPLETED_2</Page></Dialogue>
+		<DialogueOptionsList><DialogueOption>
+			<Text>$CALLISTHESIS_TICKETDISPENSER_DEPLETED_2_REPLY</Text>
+			<ConditionToSet>CALLISTHESIS_CONDITION_FRONTDESK_LUNCHBREAK</ConditionToSet>
+		</DialogueOption></DialogueOptionsList>
 	</DialogueNode>
 
 </DialogueTree>

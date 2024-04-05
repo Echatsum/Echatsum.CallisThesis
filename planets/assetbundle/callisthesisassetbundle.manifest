@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1572353989
+CRC: 592339061
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 9fb31cd22870595d21c69271494e0be9
+    Hash: d051504f7b95937bbedd5f1d79dcc6df
   TypeTreeHash:
     serializedVersion: 2
     Hash: f2263d710e6b0acd4b7346c9920361b7
@@ -56,5 +56,6 @@ ClassTypes:
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/PrefabsToBundle/CallisThesis_TestBuilding.prefab
+- Assets/PrefabsToBundle/CallisThesis_ArchiveDoorBlockers.prefab
 - Assets/PrefabsToBundle/CallisThesis_TestPresentationBooth.prefab
 Dependencies: []

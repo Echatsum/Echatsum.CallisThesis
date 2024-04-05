@@ -1,13 +1,11 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
-	<TextBlock>
-		<ID>1</ID>
+	<TextBlock><ID>1</ID>
 		<LocationA />
-		<Text>Tyrium: The Dorcad is a beetle loved by many Entomophiles.</Text>
+		<Text>$CALLISTHESIS_SCROLL_4_01_1</Text>
 	</TextBlock>
-	<TextBlock>
-		<ID>2</ID>
+	<TextBlock><ID>2</ID>
 		<ParentID>1</ParentID>
 		<LocationB />
-		<Text>Tyrium: Its shiny colors and gentle behavior makes it a pleasant pet.</Text>
+		<Text>$CALLISTHESIS_SCROLL_4_01_2</Text>
 	</TextBlock>
 </NomaiObject>

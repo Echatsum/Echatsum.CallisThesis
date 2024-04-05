@@ -1,13 +1,11 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
-	<TextBlock>
-		<ID>1</ID>
-		<LocationA />
-		<Text>Ada: The Kadun Ministry handles all the bureacratic matters of the Kadun Kingdom.</Text>
+	<TextBlock><ID>1</ID>
+		<LocationA/>
+		<Text>$CALLISTHESIS_SCROLL_1_01_1</Text>
 	</TextBlock>
-	<TextBlock>
-		<ID>2</ID>
+	<TextBlock><ID>2</ID>
 		<ParentID>1</ParentID>
-		<LocationB />
-		<Text>Ada: Considering the Kadun people do not have a writing system and have to rely entirely on oral communication, this is also the loudest place of their planet.</Text>
+		<LocationB/>
+		<Text>$CALLISTHESIS_SCROLL_1_01_2</Text>
 	</TextBlock>
 </NomaiObject>

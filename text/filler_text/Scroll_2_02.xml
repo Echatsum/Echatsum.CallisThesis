@@ -1,19 +1,16 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
-	<TextBlock>
-		<ID>1</ID>
+	<TextBlock><ID>1</ID>
 		<LocationA />
-		<Text>Dorum: Yakan is the inventor of the Nomai Quantum Music Player. (NQMP or 'Enkyump')</Text>
+		<Text>$CALLISTHESIS_SCROLL_2_02_1</Text>
 	</TextBlock>
-	<TextBlock>
-		<ID>2</ID>
+	<TextBlock><ID>2</ID>
 		<ParentID>1</ParentID>
 		<LocationB />
-		<Text>Dorum: His idea was to elevate the music listening experience by switching the track played if the device detects the user is no longer paying attention.</Text>
+		<Text>$CALLISTHESIS_SCROLL_2_02_2</Text>
 	</TextBlock>
-	<TextBlock>
-		<ID>3</ID>
+	<TextBlock><ID>3</ID>
 		<ParentID>2</ParentID>
 		<LocationB />
-		<Text>Dorum: While praised for its quality, the Enkyump ended up a commercial failure, most users stating they prefered active control over their music.</Text>
+		<Text>$CALLISTHESIS_SCROLL_2_02_3</Text>
 	</TextBlock>
 </NomaiObject>
